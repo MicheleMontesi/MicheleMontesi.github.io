@@ -1,0 +1,75 @@
+.timeline-labels {
+  position: fixed; /* Posizionamento fisso */
+  bottom: 1%; /* Posiziona la timeline in basso */
+  left: 2.5%; /* Posiziona la timeline a sinistra */
+  width: 90%; /* Occupa l'intera larghezza disponibile */
+  display: flex;
+  justify-content: space-around; /* Allinea le etichette orizzontalmente */
+  background-color: #EFEFEF; /* Sfondo trasparente */
+  padding: 0 2.5%; /* Spazio interno per rendere lo sfondo più visibile */
+  z-index: 3; /* Assicura che sia sopra il contenuto */
+  border-radius: 25px;
+}
+
+
+.timeline-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0; /* Distanza verticale maggiore tra le etichette */
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.timeline-label .timeline-text {
+  display: none;
+}
+
+.timeline-label #timeline-icon {
+  margin-right: 0;
+}
+
+/* Stile per voce non selezionata */
+.timeline-label:not(.selected) {
+  font-weight: normal;
+  color: #333333; /* Colore per voce non selezionata */
+}
+
+/* Stile per voce selezionata */
+.timeline-label.selected {
+  font-weight: bold;
+  color: #FF5722; /* Colore per voce selezionata */
+}
+
+/* @media screen and (orientation: landscape) and (max-width: 1200px) {
+
+} */
+
+@media screen and (min-width: 1200px) {
+  .timeline-labels {
+    position: fixed;
+    top: 50%;
+    right: 10px; /* Allinea le etichette a destra */
+    transform: translateY(-50%); /* Centro verticalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Centra orizzontalmente */
+    justify-content: center; /* Centra verticalmente */
+    background-color: #EFEFEF; /* Sfondo trasparente */
+    border-radius: 25px;
+    width: 8rem;
+    left: auto;
+    bottom: auto;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .timeline-label #timeline-icon {
+    margin-right: 10px;
+  }
+  
+  .timeline-label .timeline-text {
+    display: block;
+    flex-grow: 1;
+  }
+}

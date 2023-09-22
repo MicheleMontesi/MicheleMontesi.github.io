@@ -1,0 +1,77 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; /* Abilita lo snap verticale */
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column; /* Per allineare correttamente le sezioni */
+}
+
+.page {
+  min-height: 100vh; /* Altezza minima del 100% della viewport */
+  width: 100%; /* Larghezza al 100% della viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  scroll-snap-align: start; /* Allinea le sezioni all'inizio della viewport */
+  padding: 2rem 0; /* Spazio extra per evitare il testo al limite dell'alto o basso */
+  background-color: #F8F8F8;
+  position: relative;
+}
+
+.page div h1 {
+  font-size: 2rem;
+  color: #333333;
+  position: absolute;
+  top: 0; /* Posizione in alto nella viewport */
+  left: 0; /* Posizione a sinistra nella viewport */
+  right: 0; /* Posizione a destra nella viewport */
+  margin: 0 auto;
+  background-color: transparent; /* Colore di sfondo desiderato */
+  padding: 1rem; /* Spazio interno per una migliore leggibilità */
+  z-index: 2; /* Per essere sopra le bolle e le frecce */
+}
+
+.ita {
+  display: none;
+}
+
+.menu-toggle {
+  z-index: 4;
+  background-color: #efefef;
+  padding: 0 0.2%; /* Spazio interno per rendere lo sfondo più visibile */
+  border-radius: 12.5px;
+  transition: opacity 0.3s ease;
+}
+
+.menu-toggle img {
+  width: 3rem;
+  height: 3rem;
+}
+
+@media screen and (orientation: landscape) and (max-width: 1200px) {
+  .page {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .page div h1 {
+    font-size: 2.5rem;
+  }  
+}

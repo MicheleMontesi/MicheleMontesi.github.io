@@ -1,0 +1,68 @@
+/* Stili per il menu ad hamburger */
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Stili per il selettore di lingua */
+.language-menu {
+  background-color: #EFEFEF;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Imposta la posizione iniziale in alto a destra */
+.language-menu-container {
+  position: fixed;
+  top: -100px; /* Sposta il menu lingua al di fuori dello schermo inizialmente */
+  right: -250px; /* Sposta il menu lingua al di fuori dello schermo inizialmente */
+  width: 250px;
+  height: auto;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: right 0.3s ease, top 0.3s ease; /* Aggiungi una transizione per l'animazione */
+  z-index: 4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.language-menu-container.show {
+  right: 15px; /* Quando la classe 'show' è applicata, il menu lingua viene mostrato */
+  top: 15px;
+}
+
+.language-menu label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Stili per il selettore di lingua a tendina */
+.language-menu select {
+  width: 100%;
+  padding: 10px; /* Aggiorna il padding per renderlo più grande e comodo */
+  border: none; /* Rimuovi il bordo predefinito */
+  border-radius: 5px; /* Rendi i bordi stondati */
+  background-color: #EFEFEF; /* Colore di sfondo */
+  color: #000; /* Colore del testo */
+  font-size: 16px; /* Dimensione del carattere */
+  font-family: 'Times New Roman', Times, serif;
+  appearance: none; /* Rimuovi l'aspetto predefinito */
+}
+
+.language-menu select::-ms-expand {
+  display: none;
+}
+
+/* Aggiungi uno sfondo personalizzato per la freccia nell'elemento select (facoltativo) */
+.language-menu select {
+  background-image: url('../icons/down-arrow.png'); /* Aggiungi un'icona freccia personalizzata */
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px;
+  padding-right: 30px; /* Spazio per l'icona freccia */
+}

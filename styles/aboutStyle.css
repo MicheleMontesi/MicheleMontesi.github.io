@@ -1,0 +1,173 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15vh;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin: 5rem 0 1rem;
+}
+
+.profile-image {
+  width: auto; /* Imposta la dimensione dell'immagine del profilo */
+  height: 20vh; /* Imposta la dimensione dell'immagine del profilo */
+  border-radius: 50%; /* Rendi l'immagine del profilo circolare */
+  margin-right: 20px; /* Aggiungi spazio tra l'immagine e i dettagli del profilo */
+  /* Imposta l'ombra dell'immagine del profilo sfocata e verso il basso */
+  box-shadow: 0 0 0 8px rgb(239, 239, 239);
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 1.5rem; /* Imposta la dimensione del carattere per il nome */
+  color: #333333;
+  margin: 0;
+}
+
+.surname {
+  font-size: 1.2rem; /* Imposta la dimensione del carattere per il cognome */
+  color: #666666;
+  margin: 0;
+}
+
+.description {
+  text-align: center;
+}
+
+.studies {
+  font-size: 1.2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+  color: #333333;
+}
+
+.biography {
+  font-size: 1rem; /* Imposta la dimensione del carattere per la biografia */
+  color: #666666;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 10px;
+  width: 50px; /* Imposta la larghezza delle bolle social */
+  height: 50px; /* Imposta l'altezza delle bolle social */
+  border-radius: 50%; /* Rendi le bolle social circolari */
+  background-color: #fefefe; /* Colore di sfondo di LinkedIn, puoi personalizzarlo */
+  text-align: center;
+  line-height: 50px; /* Altezza uguale alla larghezza per centrare il testo verticalmente */
+  font-size: 1.5rem; /* Imposta la dimensione del carattere per l'icona */
+  text-decoration: none; /* Rimuovi il sottolineato dei link */
+  transition: background-color 0.3s ease; /* Aggiungi una transizione per il cambio di colore al passaggio del mouse */
+}
+
+.social-link:hover {
+  /* Ingrandisci un po' e genera un'ombra */
+  transform: scale(1.1);
+  /* animazione di transizione */
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #0077b5; /* Cambia il colore di sfondo al passaggio del mouse */
+  color: #fefefe; /* Cambia il colore del testo al passaggio del mouse */
+}
+
+.social-link:not(:hover) {
+  /* animazione di transizione */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Personalizza lo stile delle icone delle bolle social */
+.linkedin img {
+  width: 100%; /* Imposta la larghezza dell'immagine dell'icona */
+  height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni */
+}
+
+@media screen and (orientation: landscape) and (max-width: 1200px) {
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15vh;
+  }
+
+  .profile {
+    margin: 8vh 0 12vh 2vw;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+  }
+
+  .profile-image {
+    width: 15vw; /* Imposta la dimensione dell'immagine del profilo */
+    height: auto; /* Imposta la dimensione dell'immagine del profilo */
+    margin-bottom: 2.5vh;
+    margin-right: 0;
+  }
+
+  .name {
+    font-size: 1.5rem; /* Imposta la dimensione del carattere per il nome */
+  }
+
+  .surname {
+    font-size: 1.2rem; /* Imposta la dimensione del carattere per il cognome */
+  }
+
+  .studies {
+    font-size: 1.2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+  }
+
+  .biography {
+    font-size: 1rem; /* Imposta la dimensione del carattere per la biografia */
+  }
+
+  .social-links {
+    flex-direction: column;
+    margin: 10vh 1.5vw 15vh 12vw;
+  }
+
+  .social-link {
+    margin: 10px 0;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .profile {
+    margin: 10vh 0 5vh;
+  }
+
+  .profile-image {
+    width: 15vw; /* Imposta la dimensione dell'immagine del profilo */
+    height: auto; /* Imposta la dimensione dell'immagine del profilo */
+  }
+
+  .name {
+    font-size: 2rem; /* Imposta la dimensione del carattere per il nome */
+  }
+
+  .surname {
+    font-size: 1.5rem; /* Imposta la dimensione del carattere per il cognome */
+  }
+
+  .studies {
+    font-size: 2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+  }
+
+  .biography {
+    font-size: 1.5rem; /* Imposta la dimensione del carattere per la biografia */
+  }
+}
