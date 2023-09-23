@@ -32,7 +32,7 @@ body, html {
   position: relative;
 }
 
-.page div h1 {
+.page div .title {
   font-size: 2rem;
   color: #333333;
   position: absolute;

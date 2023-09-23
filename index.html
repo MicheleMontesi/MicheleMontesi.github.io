@@ -1,103 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="icons/logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/languageStyle.css">
-  <link rel="stylesheet" href="styles/timelineStyle.css">
-  <link rel="stylesheet" href="styles/aboutStyle.css">
-  <link rel="stylesheet" href="styles/skillsStyle.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/draggable/1.0.0/draggable.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <title>CV - Michele Montesi</title>
-</head>
-<body>
-  <div class="menu-toggle">
-    <img src="icons/hamburger-menu.svg" alt="Menu">
-  </div>
-  <div class="language-menu-container">
-    <div class="language-menu">
-      <label for="language">Language</label>
-      <select id="language">
-        <option value="eng">English</option>
-        <option value="ita">Italiano</option>
-      </select>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icons/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/languageStyle.css" />
+    <link rel="stylesheet" href="styles/timelineStyle.css" />
+    <link rel="stylesheet" href="styles/aboutStyle.css" />
+    <link rel="stylesheet" href="styles/bubblesSkillsStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>CV - Michele Montesi</title>
+  </head>
+  <body>
+    <div class="menu-toggle">
+      <img src="icons/hamburger-menu.svg" alt="Menu" />
     </div>
-  </div>
+    <div class="language-menu-container">
+      <div class="language-menu">
+        <label for="language">Language</label>
+        <select id="language">
+          <option value="eng">English</option>
+          <option value="ita">Italiano</option>
+        </select>
+      </div>
+    </div>
 
-  <div class="timeline-labels">
-    <div class="timeline-label" data-scroll-to="about">
-      <span class="material-symbols-outlined" id="timeline-icon">person</span>
-      <div class="ita">
-        <span class="timeline-text">Chi sono</span>
+    <div class="timeline-labels">
+      <div class="timeline-label" data-scroll-to="about">
+        <span class="material-symbols-outlined" id="timeline-icon">person</span>
+        <div class="ita">
+          <span class="timeline-text">Chi sono</span>
+        </div>
+        <div class="eng">
+          <span class="timeline-text">About</span>
+        </div>
       </div>
-      <div class="eng">
-        <span class="timeline-text">About</span>
+      <div class="timeline-label" data-scroll-to="skills">
+        <span class="material-symbols-outlined" id="timeline-icon">code</span>
+        <div class="ita">
+          <span class="timeline-text">Competenze</span>
+        </div>
+        <div class="eng">
+          <span class="timeline-text">Skills</span>
+        </div>
+      </div>
+      <div class="timeline-label" data-scroll-to="education">
+        <span class="material-symbols-outlined" id="timeline-icon">school</span>
+        <div class="ita">
+          <span class="timeline-text">Formazione</span>
+        </div>
+        <div class="eng">
+          <span class="timeline-text">Education</span>
+        </div>
+      </div>
+      <div class="timeline-label" data-scroll-to="experience">
+        <span class="material-symbols-outlined" id="timeline-icon">work</span>
+        <div class="ita">
+          <span class="timeline-text">Esperienza lavorativa</span>
+        </div>
+        <div class="eng">
+          <span class="timeline-text">Work experience</span>
+        </div>
+      </div>
+      <div class="timeline-label" data-scroll-to="projects">
+        <span class="material-symbols-outlined" id="timeline-icon">folder</span>
+        <div class="ita">
+          <span class="timeline-text">Progetti</span>
+        </div>
+        <div class="eng">
+          <span class="timeline-text">Projects</span>
+        </div>
+      </div>
+      <div class="timeline-label" data-scroll-to="contact">
+        <span class="material-symbols-outlined" id="timeline-icon">email</span>
+        <div class="ita">
+          <span class="timeline-text">Contatti</span>
+        </div>
+        <div class="eng">
+          <span class="timeline-text">Contact</span>
+        </div>
       </div>
     </div>
-    <div class="timeline-label" data-scroll-to="skills">
-      <span class="material-symbols-outlined" id="timeline-icon">code</span>
-      <div class="ita">
-        <span class="timeline-text">Competenze</span>
-      </div>
-      <div class="eng">
-        <span class="timeline-text">Skills</span>
-      </div>
-    </div>
-    <div class="timeline-label" data-scroll-to="education">
-      <span class="material-symbols-outlined" id="timeline-icon">school</span>
-      <div class="ita">
-        <span class="timeline-text">Formazione</span>
-      </div>
-      <div class="eng">
-        <span class="timeline-text">Education</span>
-      </div>
-    </div>
-    <div class="timeline-label" data-scroll-to="experience">
-      <span class="material-symbols-outlined" id="timeline-icon">work</span>
-      <div class="ita">
-        <span class="timeline-text">Esperienza lavorativa</span>
-      </div>
-      <div class="eng">
-        <span class="timeline-text">Work experience</span>
-      </div>
-    </div>
-    <div class="timeline-label" data-scroll-to="projects">
-      <span class="material-symbols-outlined" id="timeline-icon">folder</span>
-      <div class="ita">
-        <span class="timeline-text">Progetti</span>
-      </div>
-      <div class="eng">
-        <span class="timeline-text">Projects</span>
-      </div>
-    </div>
-    <div class="timeline-label" data-scroll-to="contact">
-      <span class="material-symbols-outlined" id="timeline-icon">email</span>
-      <div class="ita">
-        <span class="timeline-text">Contatti</span>
-      </div>
-      <div class="eng">
-        <span class="timeline-text">Contact</span>
-      </div>
-    </div>
-  </div>
 
-  <div class="container">
-    <section class="page" id="about">
-      <div class="ita">
-        <h1>Chi sono</h1>
-      </div>
-      <div class="eng">
-        <h1>About me</h1>
-      </div>
+    <div class="container">
+      <section class="page" id="about">
+        <div class="ita">
+          <h1 class="title">Chi sono</h1>
+        </div>
+        <div class="eng">
+          <h1 class="title">About me</h1>
+        </div>
 
-      <div class="about">
+        <div class="about">
           <div class="profile">
-            <img src="images/cvPic.jpg" alt="Immagine Profilo" class="profile-image">
+            <img
+              src="images/cvPic.jpg"
+              alt="Immagine Profilo"
+              class="profile-image"
+            />
             <div class="profile-details">
               <p class="name">Michele</p>
               <p class="surname">Montesi</p>
@@ -105,122 +109,171 @@
           </div>
           <div class="description">
             <div class="ita">
-              <p class="studies">Studente presso<br>
-                Ingegneria E Scienze Informatiche<br>
+              <p class="studies">
+                Studente presso<br />
+                Ingegneria E Scienze Informatiche<br />
                 Università Di Bologna
               </p>
             </div>
             <div class="eng">
               <p class="studies">
-                Student at<br>
-                Computer Science And Engineering<br>
+                Student at<br />
+                Computer Science And Engineering<br />
                 University Of Bologna
               </p>
             </div>
             <div class="ita">
               <p class="biography">
-                Sono impegnato in una continua ricerca di conoscenza,<br>
-                cercando di unire la mia passione per la tecnologia <br>
-                con una forte dedizione al lavoro di squadra e all'eccellenza.<br>
-                Come aspirante ingegnere informatico, mi sento a mio agio di fronte alle sfide, <br>
-                risolvendo problemi complessi e rimanendo all'avanguardia dell'innovazione.
+                Sono impegnato in una continua ricerca di conoscenza,<br />
+                cercando di unire la mia passione per la tecnologia <br />
+                con una forte dedizione al lavoro di squadra e
+                all'eccellenza.<br />
+                Come aspirante ingegnere informatico, mi sento a mio agio di
+                fronte alle sfide, <br />
+                risolvendo problemi complessi e rimanendo all'avanguardia
+                dell'innovazione.
               </p>
             </div>
             <div class="eng">
               <p class="biography">
-                I'm on a relentless pursuit of knowledge,<br>
-                striving to merge my passion for technology<br>
-                with a strong dedication to teamwork and excellence.<br>
-                As an aspiring computer engineer, I thrive on challenges,<br>
-                solving complex problems, and staying at the forefront of innovation.
+                I'm on a relentless pursuit of knowledge,<br />
+                striving to merge my passion for technology<br />
+                with a strong dedication to teamwork and excellence.<br />
+                As an aspiring computer engineer, I thrive on challenges,<br />
+                solving complex problems, and staying at the forefront of
+                innovation.
               </p>
             </div>
           </div>
-    
+
           <div class="social-links">
-            <a href="https://www.linkedin.com/in/michele-montesi-0b4312291" class="social-link linkedin" target="_blank">
-              <img src="images/linkedin-icon.png" alt="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/michele-montesi-0b4312291"
+              class="social-link linkedin"
+              target="_blank"
+            >
+              <img src="images/linkedin-icon.png" alt="LinkedIn" />
             </a>
             <div class="ita">
-              <a href="files/CV - Michele Montesi.pdf" download="CV - Michele Montesi.pdf" class="social-link linkedin" target="_blank">
-                <img src="images/cv.png" alt="Curriculum">
+              <a
+                href="files/CV - Michele Montesi.pdf"
+                download="CV - Michele Montesi.pdf"
+                class="social-link linkedin"
+                target="_blank"
+              >
+                <img src="images/cv.png" alt="Curriculum" />
               </a>
             </div>
             <div class="eng">
-              <a href="files/CV - Michele Montesi (English).pdf" download="CV - Michele Montesi (English).pdf" class="social-link linkedin" target="_blank">
-                <img src="images/cv.png" alt="Curriculum">
+              <a
+                href="files/CV - Michele Montesi (English).pdf"
+                download="CV - Michele Montesi (English).pdf"
+                class="social-link linkedin"
+                target="_blank"
+              >
+                <img src="images/cv.png" alt="Curriculum" />
               </a>
             </div>
-            <a href="mailto:michelemontesi36@gmail.com" class="social-link linkedin" target="_blank">
-              <img src="images/mail.png" alt="Mail">
+            <a
+              href="mailto:michelemontesi36@gmail.com"
+              class="social-link linkedin"
+              target="_blank"
+            >
+              <img src="images/mail.png" alt="Mail" />
             </a>
-          </div>      
-      </div>
-    </section>
+          </div>
+        </div>
+      </section>
 
-    <section class="page" id="skills">
+      <section class="page" id="skills">
         <div class="ita">
-          <h1>Competenze</h1>
+          <h1 class="title">Competenze</h1>
         </div>
         <div class="eng">
-          <h1>Skills</h1>
+          <h1 class="title">Skills</h1>
         </div>
         <div class="bubbles-container">
-          <div class="bubble draggable" onclick="expandBubble(this)">
-            <h2>HTML</h2>
+          <div class="bubble">
+            <div class="centered-content">
+              <h1>Programming Languages</h1>
+              <h2>Python</h2>
+              <h2>Java</h2>
+              <h2>C</h2>
+              <h2>C#</h2>
+              <h2>Bash scripting from terminal</h2>
+              <h2>Web Developer base (HTML, CSS, JavaScript, PHP, MySQL)</h2>
+              <h2>Assembly x86</h2>
+              <h2>Database: MySQL (basic)</h2>
+              <h2>Go/Golang</h2>
+              <h2>Android Developing: Kotlin (Android Studio)</h2>
+              <h2>Basic programming knowledge with OpenMP, MPI</h2>
+            </div>
           </div>
-          <div class="bubble draggable" onclick="expandBubble(this)">
-            <h2>CSS</h2>
+          <div class="bubble">
+            <div class="centered-content">
+              <h1>Operating Systems</h1>
+              <h2 class="vbh2">Linux</h2>
+              <h2 class="vbh2">Windows</h2>
+              <h2 class="vbh2">MacOS</h2>
+              <h2 class="vbh2">Android</h2>
+            </div>
           </div>
-          <div class="bubble draggable" onclick="expandBubble(this)">
-            <h2>JavaScript</h2>
+          <div class="bubble">
+            <div class="centered-content">
+              <h1>IT Tools</h1>
+              <h2 class="vbh2">
+                Docker (Docker compose, Docker Swarm, Docker container)
+              </h2>
+              <h2 class="vbh2">Teleport</h2>
+              <h2 class="vbh2">ANSIBLE</h2>
+              <h2 class="vbh2">Active Directory</h2>
+              <h2 class="vbh2">Freeipa</h2>
+            </div>
           </div>
         </div>
-    </section>
+      </section>
 
-    <section class="page" id="education">
+      <section class="page" id="education">
         <div class="ita">
-          <h1>Formazione</h1>
+          <h1 class="title">Formazione</h1>
         </div>
         <div class="eng">
-          <h1>Education</h1>
+          <h1 class="title">Education</h1>
         </div>
-    </section>
+      </section>
 
-    <section class="page" id="experience">
+      <section class="page" id="experience">
         <div class="ita">
-          <h1>Esperienza lavorativa</h1>
+          <h1 class="title">Esperienza lavorativa</h1>
         </div>
         <div class="eng">
-          <h1>Work experience</h1>
+          <h1 class="title">Work experience</h1>
         </div>
-    </section>
+      </section>
 
-    <section class="page" id="projects">
+      <section class="page" id="projects">
         <div class="ita">
-          <h1>Progetti</h1>
+          <h1 class="title">Progetti</h1>
         </div>
         <div class="eng">
-          <h1>Projects</h1>
+          <h1 class="title">Projects</h1>
         </div>
-    </section>
+      </section>
 
-    <section class="page" id="contact">
+      <section class="page" id="contact">
         <div class="ita">
-          <h1>Contatti</h1>
+          <h1 class="title">Contatti</h1>
         </div>
         <div class="eng">
-          <h1>Contact</h1>
+          <h1 class="title">Contact</h1>
         </div>
-    </section>
+      </section>
 
-    <!-- Aggiungi altre sezioni simili per esperienza lavorativa, progetti, formazione ed educazione, contatti, ecc. -->
-
-  </div>
-  <script src="scripts/languageScript.js"></script>
-  <script src="scripts/menuScript.js"></script>
-  <script src="scripts/timelineScript.js"></script>
-  <script src="scripts/skillsScript.js"></script>
-
-</body>
+      <!-- Aggiungi altre sezioni simili per esperienza lavorativa, progetti, formazione ed educazione, contatti, ecc. -->
+    </div>
+    <script src="scripts/languageScript.js"></script>
+    <script src="scripts/menuScript.js"></script>
+    <script src="scripts/timelineScript.js"></script>
+    <script src="scripts/bubblesScript.js"></script>
+  </body>
 </html>
