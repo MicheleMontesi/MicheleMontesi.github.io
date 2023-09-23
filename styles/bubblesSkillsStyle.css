@@ -177,12 +177,13 @@
   .bubble {
     width: 30vh;
     height: 30vh;
+    font-size: 0.8em;
   }
 
   .bubble.enlarged {
     width: 80vw;
     height: 50vh;
-    font-size: 25px;
+    font-size: 1em;
   }
 
   .bubbles-container {
