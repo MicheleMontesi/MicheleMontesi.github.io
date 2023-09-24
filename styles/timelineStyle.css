@@ -61,7 +61,7 @@
     left: auto;
     bottom: auto;
     padding: 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
 
   .timeline-label #timeline-icon {
