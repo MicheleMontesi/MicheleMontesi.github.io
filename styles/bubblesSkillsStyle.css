@@ -140,7 +140,7 @@
   height: 70vh;
   background-color: #fff;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 20px 0;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   flex-direction: column;
@@ -160,16 +160,14 @@
 }
 
 .modal-body {
-  overflow-y: auto;  /* Abilita la scrollbar verticale se il contenuto è più grande dell'altezza massima */
-  background-color: #EFEFEF;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 90%;
-  height: 90%;
+  overflow-y: auto;
 }
 
 .modal-body .modal-list {
   margin: 0 10px;
+  background-color: #EFEFEF;
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
 
 #modalTitle {
