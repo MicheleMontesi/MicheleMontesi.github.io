@@ -161,6 +161,7 @@
 
 .modal-body {
   overflow-y: auto;
+  width: 100%;
 }
 
 .modal-body .modal-list {
@@ -168,6 +169,10 @@
   background-color: #EFEFEF;
   box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
+}
+
+.modal-body .modal-list li {
+  width: 100%;
 }
 
 #modalTitle {
