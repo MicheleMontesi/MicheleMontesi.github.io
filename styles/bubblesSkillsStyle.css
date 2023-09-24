@@ -2,7 +2,6 @@
   --bubbleTiming: cubic-bezier(0.5, 0.15, 0.25, 1.75);
 }
 
-
 .bubble {
   display: block;
   background-color: #efefef;
@@ -167,6 +166,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 90%;
   height: 90%;
+}
+
+.modal-body .modal-list {
+  margin: 0 10px;
 }
 
 #modalTitle {
