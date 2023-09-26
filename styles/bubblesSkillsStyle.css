@@ -178,17 +178,60 @@
   animation: scrollAnimation 1s;
 }
 
-@keyframes scrollAnimation {
-  from {
-    transform: translateY(20px); /* Inizio dell'animazione, spostamento verso il basso */
-  }
-  to {
-    transform: translateY(0); /* Fine dell'animazione, ritorno alla posizione originale */
+
+@media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1200px) {
+  .page div h1 {
+    font-size: 2.2rem;
   }
 }
 
+@media screen and (orientation: landscape) and (max-width: 1200px) {
+  .page div h1 {
+    font-size: 2rem;
+  }
 
-/* Reduced motion */
+  .bubble {
+    width: 35vh;
+    height: 35vh;
+    font-size: 0.5em;
+  }
+
+  .bubbles-container {
+    align-content: center;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1000px) {
+  .page div h1 {
+    font-size: 0.9rem;
+  }
+  .bubble {
+    width: 40vh;
+    height: 40vh;
+    font-size: 0.8em;
+  }
+
+  .bubbles-container {
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bubble {
+    width: 30vh;
+    height: 30vh;
+  }
+
+  .bubbles-container {
+    align-content: center;
+  }
+
+  .modal-content {
+    width: 30vw;
+    height: 50vh;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   label {
     animation: none;
@@ -217,6 +260,15 @@
   }
 }
 
+@keyframes scrollAnimation {
+  from {
+    transform: translateY(20px); /* Inizio dell'animazione, spostamento verso il basso */
+  }
+  to {
+    transform: translateY(0); /* Fine dell'animazione, ritorno alla posizione originale */
+  }
+}
+
 /* Animations */
 @keyframes float {
   from,
@@ -231,33 +283,5 @@
   }
   75% {
     transform: translate(3%, 0);
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  .bubble {
-    width: 30vh;
-    height: 30vh;
-  }
-
-  .bubbles-container {
-    align-content: center;
-  }
-
-  .modal-content {
-    width: 30vw;
-    height: 50vh;
-  }
-}
-
-@media screen and (orientation: landscape) and (max-width: 1200px) {
-  .bubble {
-    width: 40vh;
-    height: 40vh;
-    font-size: 0.8em;
-  }
-
-  .bubbles-container {
-    align-content: center;
   }
 }
