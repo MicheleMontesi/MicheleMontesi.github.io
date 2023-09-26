@@ -39,7 +39,7 @@
   border-radius: 50%;
   background: #FFCDB2;
   overflow: hidden;
-  background-image: conic-gradient(#FF5722 85%, #EFEFEF 0);
+  background-image: conic-gradient(#FF5722 83%, #EFEFEF 0);
 }
 
 .circle-progress .inner {

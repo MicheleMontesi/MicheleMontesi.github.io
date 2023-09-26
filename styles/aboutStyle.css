@@ -51,6 +51,7 @@
 .biography {
   font-size: 1rem; /* Imposta la dimensione del carattere per la biografia */
   color: #666666;
+  margin: 0 2vw;
 }
 
 .social-links {
