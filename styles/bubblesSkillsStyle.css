@@ -2,24 +2,6 @@
   --bubbleTiming: cubic-bezier(0.5, 0.15, 0.25, 1.75);
 }
 
-.bubble {
-  display: block;
-  background-color: #efefef;
-  -webkit-tap-highlight-color: transparent;
-  font-size: 0.8rem;
-}
-
-.bubble {
-  animation: float 4s ease-in-out infinite;
-  transition:
-    transform 0.4s ease,
-    left 0.4s ease,
-    top 0.4s ease,
-    font-size 0.3s ease,
-    border-radius 0.4s ease;
-
-}
-
 .bubble,
 .bubble:before,
 .bubble:after {
@@ -32,6 +14,17 @@
 }
 
 .bubble {
+  display: block;
+  background-color: #efefef;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 0.8rem;
+  animation: float 4s ease-in-out infinite;
+  transition:
+    transform 0.4s ease,
+    left 0.4s ease,
+    top 0.4s ease,
+    font-size 0.3s ease,
+    border-radius 0.4s ease;
   box-shadow:
     0 -0.06em 0.1em #ff5722 inset,
     0 -0.15em 0.4em #ff5722 inset,
