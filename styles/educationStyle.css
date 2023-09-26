@@ -31,6 +31,40 @@
   color: #333333;
 }
 
+.circle-progress {
+  position: relative;
+  width: 20vh;
+  height: 20vh;
+  margin: 3vh 0;
+  border-radius: 50%;
+  background: #FFCDB2;
+  overflow: hidden;
+  background-image: conic-gradient(#FF5722 85%, #EFEFEF 0);
+}
+
+.circle-progress .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 19vh;
+  height: 19vh;
+  background: #efefef;
+  border-radius: 50%;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333333;
+}
+
+.circle-progress .inner h3 {
+  margin: 0;
+}
+  
+
 @media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1200px) {
   .edu-studies {
     font-size: 2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
@@ -42,10 +76,14 @@
 }
 
 @media screen and (orientation: landscape) and (max-width: 1200px) {
+  .education {
+    flex-direction: row;
+  }
+
   .uni-image {
     width: auto; /* Imposta la dimensione dell'immagine del profilo */
     height: 30vh; /* Imposta la dimensione dell'immagine del profilo */
-    margin: 0 0 5vh 0;
+    margin: 0 0 0 2vw;
   }
 
   .edu-studies {
@@ -55,6 +93,21 @@
   .study-progress {
     font-size: 1.4rem; /* Imposta la dimensione del carattere per la biografia */
   }
+
+  .circle-progress {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    margin: 0 2vw 0 0;
+  }
+
+  .circle-progress .inner {
+    display: flex;
+    width: 19vw;
+    height: 19vw;
+    font-size: 1.85em;
+    font-weight: bold;
+  }
 }
 
 @media screen and (orientation: landscape) and (max-width: 1000px) {
@@ -63,12 +116,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     margin-bottom: 16vh;
-  }
-
-  .edu-description {
-    margin-right: 17vw;
   }
 
   .uni-image {
@@ -83,6 +131,20 @@
 
   .study-progress {
     font-size: 1rem; /* Imposta la dimensione del carattere per la biografia */
+  }
+
+  .circle-progress {
+    width: 16vw;
+    height: 16vw;
+    margin: 3vh 0;
+  }
+
+  .circle-progress .inner {
+    width: 15vw;
+    height: 15vw;
+    background: #efefef;
+    font-size: 1.5em;
+    color: #333333;
   }
 }
 
@@ -99,5 +161,20 @@
 
   .study-progress {
     font-size: 1.5rem; /* Imposta la dimensione del carattere per la biografia */
+  }
+
+  .circle-progress {
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+    margin: 15vh 0;
+  }
+
+  .circle-progress .inner {
+    display: flex;
+    width: 14vw;
+    height: 14vw;
+    font-size: 1.85em;
+    font-weight: bold;
   }
 }

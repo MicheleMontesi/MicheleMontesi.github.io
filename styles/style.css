@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300");
+
 body, html {
   height: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: "Lato";
 }
 
 /* Nascondi la scrollbar predefinita */
