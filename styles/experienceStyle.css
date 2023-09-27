@@ -1,74 +1,80 @@
 #card-container {
   height: 100vh;
   width: 100vw;
-  box-sizing: border-box;
   overflow: hidden;
 }
 
-#galleryContainer { 
-  height: 500px;
-  width: 800px;
+#galleryContainer {
+  height: 100%;
+  width: 100%;
   background: transparent;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   position: relative;
 }
 
 #galleryView {
-  height: 100vh;
-  width: 100vw;
+  margin: 10vh 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .job-hidden {
   display: none;
 }
 
-#leftView.job-view-hidden, #rightView.job-view-hidden {
+#leftView.job-view-hidden,
+#rightView.job-view-hidden {
   opacity: 0;
   cursor: default;
 }
 
-#leftView.job-view-hidden:hover, #rightView.job-view-hidden:hover {
+#leftView.job-view-hidden:hover,
+#rightView.job-view-hidden:hover {
   opacity: 0;
 }
 
 #mainView {
   display: flex;
   flex-direction: column;
-  height: 450px;
-  width: 450px;  
+  height: 60vh;
+  width: 60vw;
   border-radius: 5px;
   background-color: #eb9100;
   margin-left: 10px;
   margin-right: 10px;
   z-index: 1;
-  transition: all 1s;  
+  transition: all 1s;
   text-align: center;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #mainView h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   color: #333; /* Cambia il colore del testo a tuo piacimento */
   margin: 0 0 10px 0;
 }
 
-#mainView .job-date-container {
+#mainView .job-date-location-container {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-
 }
 
-#mainView p.job-date {
+#mainView .job-date-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mainView p.job-date,
+#mainView p.job-location {
   font-size: 16px;
   color: #666; /* Cambia il colore delle date a tuo piacimento */
   margin-bottom: 5px;
@@ -78,26 +84,23 @@
   border: 1px solid #ccc; /* Aggiungi un bordo di 1px solid */
   border-radius: 5px; /* Rendi gli angoli arrotondati */
   padding: 10px; /* Aggiungi spaziatura interna */
-  background-color: #f9f9f9; 
+  background-color: #f9f9f9;
   height: 100%;
   margin: 1rem 0;
+  overflow-y: auto;
 }
 
-#mainView p.job-description {
+#mainView .job-description {
   font-size: 18px;
   line-height: 1.5; /* Imposta l'interlinea per una migliore leggibilità */
   color: #777; /* Cambia il colore del corpo a tuo piacimento */
   margin: 0;
-}
-
-#mainView:hover {
-  transform: scale(1.2);
-  transition: all 1s;   
+  text-align: left;
 }
 
 #leftView {
-  height: 400px;
-  width: 150px;
+  height: 60vh;
+  width: 10vw;
   opacity: 0.5;
   border-radius: 5px;
   transform: skewy(5deg);
@@ -106,21 +109,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s; 
-}
-
-#leftView h2 {
-  rotate: -90deg;
-}
-
-#leftView:hover {
-  opacity: 1;
   transition: all 1s;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #rightView {
-  height: 400px;
-  width: 150px;
+  height: 60vh;
+  width: 10vw;
   opacity: 0.5;
   border-radius: 5px;
   transform: skewy(-5deg);
@@ -129,40 +127,75 @@
   display: flex;
   justify-content: center;
   align-items: center;
- transition: all 1s;
-}
-
-#rightView h2 {
-  rotate: -90deg;
-}
-
-#rightView:hover {
-  opacity: 1;
   transition: all 1s;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#leftView h2,
+#rightView h2 {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
 }
 
 .navBtns {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: none;
-  position: absolute;
-  opacity: 0.8;
-  background-color: transparent;
-  cursor: pointer;
-  color: white;
+  display: none;
 }
 
-.navBtns:hover {
-  opacity: 1;
-  transition: all 1s;
-  background-color: #eb9100;
-}
+@media screen and (min-width: 1200px) {
+  #card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
 
-#navLeft {
-  left: 50px;
-}
+  #galleryView {
+    margin: 0;
+    align-items: center;
+  }
 
-#navRight {
-  right: 50px;
+  #mainView {
+    height: 60vh;
+    width: 30vw;
+  }
+
+  #mainView h2 {
+    font-size: 2rem;
+  }
+
+  #mainView .job-description {
+    font-size: 1.2rem;
+    line-height: 1.5; /* Imposta l'interlinea per una migliore leggibilità */
+    color: #777; /* Cambia il colore del corpo a tuo piacimento */
+    margin: 0;
+  }
+
+  #mainView:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+  }
+
+  #leftView {
+    height: 40vh;
+    width: 12vw;
+  }
+
+  #rightView {
+    height: 40vh;
+    width: 12vw;
+  }
+
+  #leftView:hover,
+  #rightView:hover {
+    opacity: 1;
+    transition: all 1s;
+  }
 }
