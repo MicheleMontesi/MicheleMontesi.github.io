@@ -15,7 +15,7 @@
 
 .bubble {
   display: block;
-  background-color: #efefef;
+  background-color: var(--secondary-color);
   -webkit-tap-highlight-color: transparent;
   font-size: 0.8rem;
   animation: float 4s ease-in-out infinite;
@@ -26,12 +26,12 @@
     font-size 0.3s ease,
     border-radius 0.4s ease;
   box-shadow:
-    0 -0.06em 0.1em #ff5722 inset,
-    0 -0.15em 0.4em #ff5722 inset,
-    0 0.05em 0.05em #ff5722 inset,
-    0.05em 0 0.1em #ff5722 inset,
-    -0.05em 0 0.1em #ff5722 inset,
-    0 0.1em 0.4em #ff5722 inset,
+    0 -0.06em 0.1em var(--primary-color) inset,
+    0 -0.15em 0.4em var(--primary-color) inset,
+    0 0.05em 0.05em var(--primary-color) inset,
+    0.05em 0 0.1em var(--primary-color) inset,
+    -0.05em 0 0.1em var(--primary-color) inset,
+    0 0.1em 0.4em var(--primary-color) inset,
     0 0 0 8px rgb(239, 239, 239);
   cursor: pointer;
   position: relative;
@@ -71,7 +71,7 @@
 .modal-list li {
     margin: 5px 0; /* Margine superiore e inferiore */
     font-size: 1.5em; /* Dimensione del testo */
-    color: #ff5722; /* Colore del testo */
+    color: var(--primary-color); /* Colore del testo */
     text-align: left; /* Allineamento a sinistra */
 }
 
@@ -88,7 +88,7 @@
 .centered-content h2::before {
   content: '•';
   margin-right: 5px;
-  color: #ff5722;
+  color: var(--primary-color);
 }
 
 .bubble:before,
@@ -131,7 +131,7 @@
   display: flex;
   width: 80vw;
   height: 70vh;
-  background-color: #fff;
+  background-color: var(--tertiary-color);
   margin: 0 auto;
   padding: 20px 20px 0;
   border-radius: 8px;
@@ -146,9 +146,9 @@
   right: 10px;
   font-size: 3rem;
   cursor: pointer;
-  color: #ff5722;
+  color: var(--primary-color);
   width: 4rem;
-  background-color: #EFEFEF;
+  background-color: var(--secondary-color);
   border-radius: 12.5px;
 }
 
@@ -159,7 +159,7 @@
 
 .modal-body .modal-list {
   margin: 0 10px;
-  background-color: #EFEFEF;
+  background-color: var(--secondary-color);
   box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }

@@ -5,7 +5,7 @@
   width: 90%; /* Occupa l'intera larghezza disponibile */
   display: flex;
   justify-content: space-around; /* Allinea le etichette orizzontalmente */
-  background-color: #EFEFEF; /* Sfondo trasparente */
+  background-color: var(--secondary-color); /* Sfondo trasparente */
   padding: 0 2.5%; /* Spazio interno per rendere lo sfondo più visibile */
   z-index: 3; /* Assicura che sia sopra il contenuto */
   border-radius: 25px;
@@ -38,7 +38,7 @@
 /* Stile per voce selezionata */
 .timeline-label.selected {
   font-weight: bold;
-  color: #FF5722; /* Colore per voce selezionata */
+  color: var(--primary-color); /* Colore per voce selezionata */
 }
 
 /* @media screen and (orientation: landscape) and (max-width: 1200px) {
@@ -55,7 +55,7 @@
     flex-direction: column;
     align-items: start; /* Centra orizzontalmente */
     justify-content: center; /* Centra verticalmente */
-    background-color: #EFEFEF; /* Sfondo trasparente */
+    background-color: var(--secondary-color); /* Sfondo trasparente */
     border-radius: 25px;
     width: 8rem;
     left: auto;

@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300');
 
+:root {
+  --primary-color: #FF5722;
+  --secondary-color: #EFEFEF;
+  --tertiary-color: #EB9100;
+  --bg-color: #F8F8F8;
+}
+
 body,
 html {
   height: 100%;
@@ -59,7 +66,7 @@ html {
   text-align: center;
   scroll-snap-align: start; /* Allinea le sezioni all'inizio della viewport */
   padding: 2rem 0; /* Spazio extra per evitare il testo al limite dell'alto o basso */
-  background-color: #f8f8f8;
+  background-color: var(--bg-color);
   position: relative;
 }
 
@@ -82,7 +89,7 @@ html {
 
 .menu-toggle {
   z-index: 4;
-  background-color: #efefef;
+  background-color: var(--secondary-color);
   padding: 0 0.2%; /* Spazio interno per rendere lo sfondo più visibile */
   border-radius: 12.5px;
   transition: opacity 0.3s ease;

@@ -8,7 +8,7 @@
 
 /* Stili per il selettore di lingua */
 .language-menu {
-  background-color: #EFEFEF;
+  background-color: var(--secondary-color);
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -47,7 +47,7 @@
   padding: 10px; /* Aggiorna il padding per renderlo più grande e comodo */
   border: none; /* Rimuovi il bordo predefinito */
   border-radius: 5px; /* Rendi i bordi stondati */
-  background-color: #EFEFEF; /* Colore di sfondo */
+  background-color: var(--secondary-color); /* Colore di sfondo */
   color: #000; /* Colore del testo */
   font-size: 16px; /* Dimensione del carattere */
   font-family: 'Times New Roman', Times, serif;

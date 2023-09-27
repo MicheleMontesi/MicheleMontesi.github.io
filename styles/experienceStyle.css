@@ -43,18 +43,18 @@
   height: 60vh;
   width: 60vw;
   border-radius: 5px;
-  background-color: #eb9100;
+  background-color: var(--tertiary-color);
   margin-left: 10px;
   margin-right: 10px;
   z-index: 1;
   transition: all 1s;
   text-align: center;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #mainView h2 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   font-weight: bold;
   color: #333; /* Cambia il colore del testo a tuo piacimento */
   margin: 0 0 10px 0;
@@ -64,6 +64,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #mainView .job-date-container {
@@ -75,23 +79,25 @@
 
 #mainView p.job-date,
 #mainView p.job-location {
-  font-size: 16px;
+  font-size: 1em;
   color: #666; /* Cambia il colore delle date a tuo piacimento */
-  margin-bottom: 5px;
+  margin: 5px;
 }
+
 
 #mainView .job-description-box {
   border: 1px solid #ccc; /* Aggiungi un bordo di 1px solid */
   border-radius: 5px; /* Rendi gli angoli arrotondati */
   padding: 10px; /* Aggiungi spaziatura interna */
-  background-color: #f9f9f9;
+  background-color: var(--secondary-color);
   height: 100%;
   margin: 1rem 0;
   overflow-y: auto;
+  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #mainView .job-description {
-  font-size: 18px;
+  font-size: 1em;
   line-height: 1.5; /* Imposta l'interlinea per una migliore leggibilità */
   color: #777; /* Cambia il colore del corpo a tuo piacimento */
   margin: 0;
@@ -105,7 +111,7 @@
   border-radius: 5px;
   transform: skewy(5deg);
   transform-origin: top right;
-  background-color: #eb9100;
+  background-color: var(--tertiary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +120,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #rightView {
@@ -123,7 +130,7 @@
   border-radius: 5px;
   transform: skewy(-5deg);
   transform-origin: top left;
-  background-color: #eb9100;
+  background-color: var(--tertiary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,6 +139,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #leftView h2,

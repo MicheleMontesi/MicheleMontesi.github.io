@@ -38,7 +38,7 @@
   border-radius: 50%;
   background: #ffcdb2;
   overflow: hidden;
-  background-image: conic-gradient(#ff5722 83%, #efefef 0);
+  background-image: conic-gradient(var(--primary-color) 83%, var(--secondary-color) 0);
 }
 
 .circle-progress .inner {
@@ -52,7 +52,7 @@
   transform: translate(-50%, -50%);
   width: 19vh;
   height: 19vh;
-  background: #efefef;
+  background: var(--secondary-color);
   border-radius: 50%;
   font-size: 1.5em;
   font-weight: bold;
@@ -140,7 +140,7 @@
   .circle-progress .inner {
     width: 15vw;
     height: 15vw;
-    background: #efefef;
+    background: var(--secondary-color);
     font-size: 1.5em;
     color: #333333;
   }
