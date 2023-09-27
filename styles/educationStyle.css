@@ -6,7 +6,6 @@
   width: 100%;
   margin-bottom: 15vh;
 }
-
 .uni-image {
   width: auto; /* Imposta la dimensione dell'immagine del profilo */
   height: 20vh; /* Imposta la dimensione dell'immagine del profilo */
@@ -37,9 +36,9 @@
   height: 20vh;
   margin: 3vh 0;
   border-radius: 50%;
-  background: #FFCDB2;
+  background: #ffcdb2;
   overflow: hidden;
-  background-image: conic-gradient(#FF5722 83%, #EFEFEF 0);
+  background-image: conic-gradient(#ff5722 83%, #efefef 0);
 }
 
 .circle-progress .inner {
@@ -63,7 +62,6 @@
 .circle-progress .inner h3 {
   margin: 0;
 }
-  
 
 @media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1200px) {
   .edu-studies {
@@ -148,11 +146,10 @@
   }
 }
 
-
 @media screen and (min-width: 1200px) {
   .uni-image {
-    width: 15vw; /* Imposta la dimensione dell'immagine del profilo */
-    height: auto; /* Imposta la dimensione dell'immagine del profilo */
+    width: auto; /* Imposta la dimensione dell'immagine del profilo */
+    height: 20vh; /* Imposta la dimensione dell'immagine del profilo */
   }
 
   .edu-studies {
@@ -165,15 +162,15 @@
 
   .circle-progress {
     position: relative;
-    width: 15vw;
-    height: 15vw;
+    width: 20vh;
+    height: 20vh;
     margin: 5vh 0 15vh;
   }
 
   .circle-progress .inner {
     display: flex;
-    width: 14vw;
-    height: 14vw;
+    width: 19vh;
+    height: 19vh;
     font-size: 1.85em;
     font-weight: bold;
   }
