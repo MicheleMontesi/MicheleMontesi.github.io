@@ -1,49 +1,8 @@
-#toggleContainer label { 
-  text-align: center;
-  width: 70px;
-}
-
 #card-container {
   height: 100vh;
   width: 100vw;
   box-sizing: border-box;
   overflow: hidden;
-}
-
-#toggleContainer {
-  height: 10vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 95vw;
-  position: absolute;
-}
-
-#tilesContainer {
-  min-height: 90vh;
-  width: 100vw;
-  margin-top: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  align-content: center;
-  
-}
-
-.tileItem {
-  width: 250px;
-  height: 250px;
-  margin: 5px;
-  border-radius: 5px;
-  
-  transition: all 0.5s ease;
-}
-
-.tileItem:hover {
-   transform: scale(1.05);
-  transition: all 0.5s ease;
 }
 
 #galleryContainer { 
@@ -58,23 +17,6 @@
   position: relative;
 }
 
-#toggle {
-  height: 10vh;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  margin: 10px;
-}
-
-#tilesView {
-  min-height: 100vh;
-  width: 100vw;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  
-}
-
 #galleryView {
   height: 100vh;
   width: 100vw;
@@ -83,37 +25,17 @@
   align-items: center;
 }
 
-#outer3 {
-  width: 100px;
-  height: 40px;
-  background-color: white;
-  margin: 10px auto;
-  border-radius: 3px;
-  border: 2px solid white;
-  transition: all 0.5s;
+.job-hidden {
+  display: none;
 }
 
-#slider3 {
-  height: 36px;
-  width: 46px;
-  background-color: orange;
-  border-radius: 3px;  
-  transition: all 0.5s;
+#leftView.job-view-hidden, #rightView.job-view-hidden {
+  opacity: 0;
+  cursor: default;
 }
 
-#slider3.active {
-  -webkit-transform: translatex(50px);
-  -ms-transform: translatex(50px);
-  -o-transform: translatex(50px);
-  transform: translatex(50px);
-  transition: all 0.5s;
-  background-color: orange;
-}
-
-#outer3.outerActive {
-  background-color: white;
-  border: 2px solid white;
-  transition: all 0.5s;
+#leftView.job-view-hidden:hover, #rightView.job-view-hidden:hover {
+  opacity: 0;
 }
 
 #mainView {
@@ -130,6 +52,42 @@
   text-align: center;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#mainView h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333; /* Cambia il colore del testo a tuo piacimento */
+  margin: 0 0 10px 0;
+}
+
+#mainView .job-date-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+#mainView p.job-date {
+  font-size: 16px;
+  color: #666; /* Cambia il colore delle date a tuo piacimento */
+  margin-bottom: 5px;
+}
+
+#mainView .job-description-box {
+  border: 1px solid #ccc; /* Aggiungi un bordo di 1px solid */
+  border-radius: 5px; /* Rendi gli angoli arrotondati */
+  padding: 10px; /* Aggiungi spaziatura interna */
+  background-color: #f9f9f9; 
+  height: 100%;
+  margin: 1rem 0;
+}
+
+#mainView p.job-description {
+  font-size: 18px;
+  line-height: 1.5; /* Imposta l'interlinea per una migliore leggibilità */
+  color: #777; /* Cambia il colore del corpo a tuo piacimento */
+  margin: 0;
 }
 
 #mainView:hover {
@@ -152,11 +110,7 @@
 }
 
 #leftView h2 {
-  rotate: 90deg;
-}
-
-#leftView p {
-  display: none;
+  rotate: -90deg;
 }
 
 #leftView:hover {
@@ -180,10 +134,6 @@
 
 #rightView h2 {
   rotate: -90deg;
-}
-
-#rightView p {
-  display: none;
 }
 
 #rightView:hover {
@@ -215,10 +165,4 @@
 
 #navRight {
   right: 50px;
-}
-
-#linkTag { 
-  cursor: pointer;
-  z-index: 1;
-  box-sizing: border-box;
 }
