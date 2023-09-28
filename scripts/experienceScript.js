@@ -276,7 +276,17 @@ function scrollRight() {
       nextExp++
       isAtLeftEnd = false
     }
-    loadGallery()
+
+    const mainView = document.getElementById('mainView')
+    const rightView = document.getElementById('rightView')
+    mainView.classList.add('animate-slide-right')
+    rightView.classList.add('animate-slide-right')
+
+    setTimeout(() => {
+      loadGallery()
+      mainView.classList.remove('animate-slide-right')
+      rightView.classList.remove('animate-slide-right')
+    }, 500);
   }
 }
 
@@ -292,7 +302,17 @@ function scrollLeft() {
       prevExp--
       isAtRightEnd = false
     }
-    loadGallery()
+
+    const mainView = document.getElementById('mainView')
+    const leftView = document.getElementById('leftView')
+    mainView.classList.add('animate-slide-left')
+    leftView.classList.add('animate-slide-left')
+
+    setTimeout(() => {
+      loadGallery()
+      mainView.classList.remove('animate-slide-left')
+      leftView.classList.remove('animate-slide-left')
+    }, 500);
   }
 }
 

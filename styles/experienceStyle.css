@@ -37,6 +37,18 @@
   opacity: 0;
 }
 
+#mainView.animate-slide-right, #rightView.animate-slide-right {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transform: translatex(-200px);
+  opacity: 0;
+}
+
+#mainView.animate-slide-left, #leftView.animate-slide-left {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  transform: translatex(200px);
+  opacity: 0;
+}
+
 #mainView {
   display: flex;
   flex-direction: column;
