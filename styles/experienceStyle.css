@@ -37,14 +37,20 @@
   opacity: 0;
 }
 
-#mainView.animate-slide-right, #rightView.animate-slide-right {
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+#mainView.animate-slide-right,
+#rightView.animate-slide-right {
+  transition:
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
   transform: translatex(-200px);
   opacity: 0;
 }
 
-#mainView.animate-slide-left, #leftView.animate-slide-left {
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+#mainView.animate-slide-left,
+#leftView.animate-slide-left {
+  transition:
+    transform 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
   transform: translatex(200px);
   opacity: 0;
 }
@@ -62,13 +68,13 @@
   transition: all 1s;
   text-align: center;
   padding: 20px;
-  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #mainView h2 {
   font-size: 1.5em;
   font-weight: bold;
-  color: #333; /* Cambia il colore del testo a tuo piacimento */
+  color: #333;
   margin: 0 0 10px 0;
 }
 
@@ -79,7 +85,7 @@
   padding: 10px;
   background-color: var(--secondary-color);
   border-radius: 5px;
-  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #mainView .job-date-container {
@@ -92,26 +98,25 @@
 #mainView p.job-date,
 #mainView p.job-location {
   font-size: 1em;
-  color: #666; /* Cambia il colore delle date a tuo piacimento */
+  color: #666;
   margin: 5px;
 }
 
-
 #mainView .job-description-box {
-  border: 1px solid #ccc; /* Aggiungi un bordo di 1px solid */
-  border-radius: 5px; /* Rendi gli angoli arrotondati */
-  padding: 10px; /* Aggiungi spaziatura interna */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
   background-color: var(--secondary-color);
   height: 100%;
   margin: 1rem 0;
   overflow-y: auto;
-  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #mainView .job-description {
   font-size: 1em;
-  line-height: 1.5; /* Imposta l'interlinea per una migliore leggibilità */
-  color: #777; /* Cambia il colore del corpo a tuo piacimento */
+  line-height: 1.5;
+  color: #777;
   margin: 0;
   text-align: left;
 }
@@ -193,8 +198,8 @@
 
   #mainView .job-description {
     font-size: 1.5rem;
-    line-height: 1.5; /* Imposta l'interlinea per una migliore leggibilità */
-    color: #777; /* Cambia il colore del corpo a tuo piacimento */
+    line-height: 1.5;
+    color: #777;
     margin: 0;
   }
 
@@ -206,7 +211,7 @@
   #mainView p.job-date,
   #mainView p.job-location {
     font-size: 1.5em;
-    color: #666; /* Cambia il colore delle date a tuo piacimento */
+    color: #666;
     margin: 5px;
   }
 

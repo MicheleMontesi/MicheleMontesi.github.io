@@ -1,29 +1,24 @@
-// Seleziona tutti i bottoni per aprire i modali
 var openModalBtns = document.querySelectorAll('.bubble')
 
 openModalBtns.forEach((bubble) => {
-  const randomDuration = Math.random() * (15 - 4) + 4; // Calcola una durata casuale tra 4 e 15 secondi
-  bubble.style.animationDuration = `${randomDuration}s`;
-});
+  const randomDuration = Math.random() * (15 - 4) + 4
+  bubble.style.animationDuration = `${randomDuration}s`
+})
 
-// Aggiungi un gestore di eventi a ciascun bottone
 openModalBtns.forEach(function (btn) {
   btn.addEventListener('click', function () {
-    // Ottieni l'ID del modal associato a questo bottone
     var modalId = this.getAttribute('id').replace('openM', 'm')
     var modal = document.getElementById(modalId)
-    modal.classList.add('scroll-animation');
+    modal.classList.add('scroll-animation')
     modal.style.display = 'flex'
   })
 })
 
-// Funzione per chiudere il modal
 function closeModal(modalId) {
   var modal = document.getElementById(modalId)
   modal.style.display = 'none'
 }
 
-// Chiudi il modal quando si fa clic sulla "X" per ciascun modal
 var closeBtns = document.querySelectorAll('.close')
 closeBtns.forEach(function (btn) {
   btn.addEventListener('click', function () {
@@ -35,7 +30,6 @@ closeBtns.forEach(function (btn) {
 var closeModalBG = document.querySelectorAll('.modal-container')
 closeModalBG.forEach(function (bg) {
   bg.addEventListener('click', function (event) {
-    // Verifica se l'elemento cliccato è il contenuto del modale
     if (
       !event.target.classList.contains('modal-content') &&
       !event.target.classList.contains('modal-body') &&
@@ -49,4 +43,3 @@ closeModalBG.forEach(function (bg) {
     }
   })
 })
-

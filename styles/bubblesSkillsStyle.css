@@ -57,32 +57,29 @@
 
 .centered-content h1 {
   position: relative;
-  text-align: center; /* Centra il testo orizzontalmente */
-  margin-top: auto; /* Posiziona il testo al centro verticalmente */
-  margin-bottom: auto; /* Posiziona il testo al centro verticalmente */
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-/* Stile per l'elenco non ordinato (ul) */
 .modal-list {
-    list-style-type: circle; /* Utilizza punti come marcatori */
+  list-style-type: circle;
 }
 
-/* Stile per gli elementi di lista (li) */
 .modal-list li {
-    margin: 5px 0; /* Margine superiore e inferiore */
-    font-size: 1.5em; /* Dimensione del testo */
-    color: var(--primary-color); /* Colore del testo */
-    text-align: left; /* Allineamento a sinistra */
+  margin: 5px 0;
+  font-size: 1.5em;
+  color: var(--primary-color);
+  text-align: left;
 }
 
 .modal-list li p {
   color: #000;
 }
 
-/* Cambia il colore del testo quando si passa il mouse sopra un elemento di lista */
 .modal-list li:hover {
-    color: #007bff; /* Colore del testo quando si passa il mouse sopra */
-    cursor: pointer;
+  color: #007bff;
+  cursor: pointer;
 }
 
 .centered-content h2::before {
@@ -98,7 +95,6 @@
   transition-timing-function: var(--bubbleTiming);
 }
 
-
 .bubbles-container {
   height: 100%;
   display: flex;
@@ -110,7 +106,6 @@
   margin-bottom: 10vh;
 }
 
-/* Modals */
 .modal-container {
   display: none;
   position: fixed;
@@ -159,7 +154,7 @@
 .modal-body .modal-list {
   margin: 0 10px;
   background-color: var(--secondary-color);
-  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
 
@@ -172,11 +167,9 @@
   margin-top: 0;
 }
 
-/* Aggiungi un'animazione di scroll al modal-body */
 .scroll-animation .modal-body {
   animation: scrollAnimation 1s;
 }
-
 
 @media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1200px) {
   .page div h1 {
@@ -265,14 +258,13 @@
 
 @keyframes scrollAnimation {
   from {
-    transform: translateY(20px); /* Inizio dell'animazione, spostamento verso il basso */
+    transform: translateY(20px);
   }
   to {
-    transform: translateY(0); /* Fine dell'animazione, ritorno alla posizione originale */
+    transform: translateY(0);
   }
 }
 
-/* Animations */
 @keyframes float {
   from,
   to {
