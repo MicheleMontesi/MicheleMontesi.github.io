@@ -108,7 +108,7 @@ const engExperiences = [
     ],
   },
   {
-    title: 'Tutor for Computer Science, Mathematics, and Sciences',
+    title: 'Personal Tutor',
     startDate: '03/01/2023',
     endDate: 'In progress',
     jobLocation: 'Remote / Work from Home',
