@@ -107,8 +107,7 @@
   align-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 10vh;
 }
 
 /* Modals */
@@ -169,8 +168,8 @@
 }
 
 #modalTitle {
-    text-align: center;
-    margin-top: 0;
+  text-align: center;
+  margin-top: 0;
 }
 
 /* Aggiungi un'animazione di scroll al modal-body */
@@ -229,6 +228,10 @@
   .modal-content {
     width: 30vw;
     height: 50vh;
+  }
+
+  #modalTitle {
+    font-size: 2rem;
   }
 }
 

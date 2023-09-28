@@ -19,7 +19,7 @@ const itaExperiences = [
   },
   {
     title:
-      'Insegnante Di Ripetizioni Di Materie Informatiche, Matematiche E Scientifiche',
+      'Insegnante Di Ripetizioni',
     startDate: '01/03/2023',
     endDate: 'In corso',
     jobLocation: 'Remoto / Da casa',

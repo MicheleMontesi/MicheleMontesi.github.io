@@ -54,47 +54,6 @@
   margin: 0 2vw;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-
-.social-link {
-  display: inline-block;
-  margin: 0 10px;
-  width: 50px; /* Imposta la larghezza delle bolle social */
-  height: 50px; /* Imposta l'altezza delle bolle social */
-  border-radius: 50%; /* Rendi le bolle social circolari */
-  background-color: #fefefe; /* Colore di sfondo di LinkedIn, puoi personalizzarlo */
-  text-align: center;
-  line-height: 50px; /* Altezza uguale alla larghezza per centrare il testo verticalmente */
-  font-size: 1.5rem; /* Imposta la dimensione del carattere per l'icona */
-  text-decoration: none; /* Rimuovi il sottolineato dei link */
-  transition: background-color 0.3s ease; /* Aggiungi una transizione per il cambio di colore al passaggio del mouse */
-}
-
-.social-link:hover {
-  /* Ingrandisci un po' e genera un'ombra */
-  transform: scale(1.1);
-  /* animazione di transizione */
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  background-color: #0077b5; /* Cambia il colore di sfondo al passaggio del mouse */
-  color: #fefefe; /* Cambia il colore del testo al passaggio del mouse */
-}
-
-.social-link:not(:hover) {
-  /* animazione di transizione */
-  transition: all 0.3s ease-in-out;
-}
-
-/* Personalizza lo stile delle icone delle bolle social */
-.linkedin img {
-  width: 100%; /* Imposta la larghezza dell'immagine dell'icona */
-  height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni */
-}
-
 @media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1200px) {
   .name {
     font-size: 2rem; /* Imposta la dimensione del carattere per il nome */
@@ -151,21 +110,16 @@
     font-size: 1.8rem; /* Imposta la dimensione del carattere per il cognome */
   }
 
+  .description {
+    margin: 0 18vw 0 0;
+  }
+
   .studies {
     font-size: 2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
   }
 
   .biography {
     font-size: 1.4rem; /* Imposta la dimensione del carattere per la biografia */
-  }
-
-  .social-links {
-    flex-direction: column;
-    margin: 10vh 1.5vw 15vh 12vw;
-  }
-
-  .social-link {
-    margin: 10px 0;
   }
 }
 
@@ -211,15 +165,6 @@
 
   .biography {
     font-size: 1rem; /* Imposta la dimensione del carattere per la biografia */
-  }
-
-  .social-links {
-    flex-direction: column;
-    margin: 10vh 1.5vw 15vh 12vw;
-  }
-
-  .social-link {
-    margin: 10px 0;
   }
 }
 
