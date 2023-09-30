@@ -64,15 +64,15 @@
 
 /* Stile per l'elenco non ordinato (ul) */
 .modal-list {
-    list-style-type: circle; /* Utilizza punti come marcatori */
+  list-style-type: circle; /* Utilizza punti come marcatori */
 }
 
 /* Stile per gli elementi di lista (li) */
 .modal-list li {
-    margin: 5px 0; /* Margine superiore e inferiore */
-    font-size: 1.5em; /* Dimensione del testo */
-    color: var(--primary-color); /* Colore del testo */
-    text-align: left; /* Allineamento a sinistra */
+  margin: 5px 0; /* Margine superiore e inferiore */
+  font-size: 1.5em; /* Dimensione del testo */
+  color: var(--primary-color); /* Colore del testo */
+  text-align: left; /* Allineamento a sinistra */
 }
 
 .modal-list li p {
@@ -81,8 +81,8 @@
 
 /* Cambia il colore del testo quando si passa il mouse sopra un elemento di lista */
 .modal-list li:hover {
-    color: #007bff; /* Colore del testo quando si passa il mouse sopra */
-    cursor: pointer;
+  color: #007bff; /* Colore del testo quando si passa il mouse sopra */
+  cursor: pointer;
 }
 
 .centered-content h2::before {
@@ -97,7 +97,6 @@
   position: absolute;
   transition-timing-function: var(--bubbleTiming);
 }
-
 
 .bubbles-container {
   height: 100%;
@@ -159,7 +158,7 @@
 .modal-body .modal-list {
   margin: 0 10px;
   background-color: var(--secondary-color);
-  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
 
@@ -176,7 +175,6 @@
 .scroll-animation .modal-body {
   animation: scrollAnimation 1s;
 }
-
 
 @media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1200px) {
   .page div h1 {
@@ -265,10 +263,14 @@
 
 @keyframes scrollAnimation {
   from {
-    transform: translateY(20px); /* Inizio dell'animazione, spostamento verso il basso */
+    transform: translateY(
+      20px
+    ); /* Inizio dell'animazione, spostamento verso il basso */
   }
   to {
-    transform: translateY(0); /* Fine dell'animazione, ritorno alla posizione originale */
+    transform: translateY(
+      0
+    ); /* Fine dell'animazione, ritorno alla posizione originale */
   }
 }
 

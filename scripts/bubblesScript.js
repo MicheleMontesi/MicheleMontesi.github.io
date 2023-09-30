@@ -2,9 +2,9 @@
 var openModalBtns = document.querySelectorAll('.bubble')
 
 openModalBtns.forEach((bubble) => {
-  const randomDuration = Math.random() * (15 - 4) + 4; // Calcola una durata casuale tra 4 e 15 secondi
-  bubble.style.animationDuration = `${randomDuration}s`;
-});
+  const randomDuration = Math.random() * (15 - 4) + 4 // Calcola una durata casuale tra 4 e 15 secondi
+  bubble.style.animationDuration = `${randomDuration}s`
+})
 
 // Aggiungi un gestore di eventi a ciascun bottone
 openModalBtns.forEach(function (btn) {
@@ -12,7 +12,7 @@ openModalBtns.forEach(function (btn) {
     // Ottieni l'ID del modal associato a questo bottone
     var modalId = this.getAttribute('id').replace('openM', 'm')
     var modal = document.getElementById(modalId)
-    modal.classList.add('scroll-animation');
+    modal.classList.add('scroll-animation')
     modal.style.display = 'flex'
   })
 })
@@ -49,4 +49,3 @@ closeModalBG.forEach(function (bg) {
     }
   })
 })
-

@@ -62,7 +62,7 @@
   transition: all 1s;
   text-align: center;
   padding: 20px;
-  box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow:0 0 0 8px rgb(239, 239, 239);
 }
 
 #mainView h2 {
@@ -132,7 +132,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow:0 0 0 8px rgb(239, 239, 239);
 }
 
 #rightView {
@@ -151,7 +151,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow:0 0 0 8px rgb(239, 239, 239);
 }
 
 #leftView h2,

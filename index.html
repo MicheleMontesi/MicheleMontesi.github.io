@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/educationStyle.css" />
     <link rel="stylesheet" href="styles/experienceStyle.css" />
     <link rel="stylesheet" href="styles/contactsStyle.css" />
+    <link rel="stylesheet" href="styles/projectsStyle.css" />
     <link
       rel="stylesheet"
       href="styles/bubblesSkillsStyle.css"
@@ -150,7 +151,6 @@
               </p>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -316,11 +316,7 @@
         </div>
 
         <div class="education">
-          <img
-            src="images/unibo.png"
-            alt="Unibo Icon"
-            class="uni-image"
-          />
+          <img src="images/unibo.png" alt="Unibo Icon" class="uni-image" />
           <div class="edu-description">
             <div class="ita">
               <p class="edu-studies">
@@ -367,10 +363,14 @@
           <div id="galleryView">
             <div id="galleryContainer">
               <div id="leftView"></div>
-              <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+              <button id="navLeft" class="navBtns">
+                <i class="fas fa-arrow-left fa-3x"></i>
+              </button>
               <div id="mainView"></div>
               <div id="rightView"></div>
-              <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+              <button id="navRight" class="navBtns">
+                <i class="fas fa-arrow-right fa-3x"></i>
+              </button>
             </div>
           </div>
         </div>
@@ -382,6 +382,51 @@
         </div>
         <div class="eng">
           <h1 class="title">Projects</h1>
+        </div>
+
+        <div class="projects-container">
+          <ul class="projects-menu">
+            <div class="projects-toggle">
+              <img src="icons/GitHub-logo.png" alt="Click Me" />
+            </div>
+            <li style="--i: 0">
+              <div class="proj-bubble" id="proj-teleport">
+                <img src="icons/teleport.png" alt="" />
+              </div>
+            </li>
+            <li style="--i: 1">
+              <div class="proj-bubble" id="proj-swarm">
+                <img src="icons/swarm.png" alt="" />
+              </div>
+            </li>
+            <li style="--i: 2">
+              <div class="proj-bubble" id="proj-hpc">
+                <img src="icons/hpc.png" alt="" />
+              </div>
+            </li>
+            <li style="--i: 3">
+              <div class="proj-bubble" id="proj-db">
+                <img src="icons/javadb.jpeg" alt="" />
+              </div>
+            </li>
+            <li style="--i: 4">
+              <div class="proj-bubble" id="proj-udp">
+                <img src="icons/udp.jpeg" alt="" />
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="modal-container" id="proj-modal">
+          <div class="modal-content">
+            <span class="close close1">&times;</span>
+            <h2 id="proj-title"></h2>
+            <img id="proj-image" src="" alt="">
+            <div class="proj-desc-container">
+              <p id="proj-description"></p>
+            </div>
+            <a id="proj-link" href="#" target="_blank">Visita la repo</a>
+          </div>
         </div>
       </section>
 
@@ -437,7 +482,8 @@
     <script src="scripts/timelineScript.js"></script>
     <script src="scripts/bubblesScript.js"></script>
     <script src="scripts/experienceScript.js"></script>
+    <script src="scripts/projectsScript.js"></script>
 
-     <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
+    <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
   </body>
 </html>
