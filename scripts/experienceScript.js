@@ -286,6 +286,7 @@ function scrollRight() {
       mainView.classList.remove('animate-slide-right')
       rightView.classList.remove('animate-slide-right')
     }, 500)
+    createPageIndicators();
   }
 }
 
@@ -312,7 +313,36 @@ function scrollLeft() {
       mainView.classList.remove('animate-slide-left')
       leftView.classList.remove('animate-slide-left')
     }, 500)
+    createPageIndicators();
   }
+}
+
+function createPageIndicators() {
+  const pageIndicatorsContainer = document.getElementById('page-indicators');
+  pageIndicatorsContainer.innerHTML = '';
+
+  for (let i = 0; i < experiences.length; i++) {
+    const indicator = document.createElement('div');
+    indicator.classList.add('page-indicator');
+    if (i === mainExp) {
+      indicator.classList.add('active');
+    }
+
+    indicator.addEventListener('click', () => {
+      goToPage(i);
+    });
+
+    pageIndicatorsContainer.appendChild(indicator);
+  }
+}
+
+function goToPage(pageIndex) {
+  prevExp = mainExp;
+  mainExp = pageIndex;
+  nextExp = (pageIndex + 1) % experiences.length;
+
+  loadGallery();
+  createPageIndicators();
 }
 
 let touchStartX = 0
@@ -353,3 +383,4 @@ document.addEventListener('keyup', function (e) {
 })
 
 loadGallery()
+createPageIndicators();

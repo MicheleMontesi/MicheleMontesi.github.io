@@ -19,7 +19,9 @@
   margin: 10vh 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
 }
 
 .job-hidden {
@@ -170,6 +172,26 @@
 
 .navBtns {
   display: none;
+}
+
+#page-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.page-indicator {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #ccc; /* Colore di base */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.page-indicator.active {
+  background-color: #333; /* Colore attivo */
 }
 
 @media screen and (min-width: 1200px) {
