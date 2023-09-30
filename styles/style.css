@@ -16,12 +16,12 @@ html {
   font-family: 'Lato';
 }
 
-/* Nascondi la scrollbar predefinita */
+
 ::-webkit-scrollbar {
   width: 6px;
 }
 
-/* Stile per la scrollbar orizzontale */
+
 ::-webkit-scrollbar-track {
   background: transparent;
 }
@@ -31,7 +31,7 @@ html {
   border-radius: 10px;
 }
 
-/* Stile per la scrollbar verticale */
+
 ::-webkit-scrollbar-track:vertical {
   background: transparent;
 }
@@ -41,7 +41,7 @@ html {
   border-radius: 10px;
 }
 
-/* Stile quando si passa il mouse sulla scrollbar */
+
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -50,22 +50,22 @@ html {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  scroll-snap-type: y mandatory; /* Abilita lo snap verticale */
+  scroll-snap-type: y mandatory; 
   scroll-behavior: smooth;
   display: flex;
-  flex-direction: column; /* Per allineare correttamente le sezioni */
+  flex-direction: column; 
 }
 
 .page {
-  min-height: 100vh; /* Altezza minima del 100% della viewport */
-  width: 100%; /* Larghezza al 100% della viewport */
+  min-height: 100vh; 
+  width: 100%; 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  scroll-snap-align: start; /* Allinea le sezioni all'inizio della viewport */
-  padding: 2rem 0; /* Spazio extra per evitare il testo al limite dell'alto o basso */
+  scroll-snap-align: start; 
+  padding: 2rem 0; 
   background-color: var(--bg-color);
   position: relative;
 }
@@ -74,13 +74,13 @@ html {
   font-size: 2rem;
   color: #333333;
   position: absolute;
-  top: 0; /* Posizione in alto nella viewport */
-  left: 0; /* Posizione a sinistra nella viewport */
-  right: 0; /* Posizione a destra nella viewport */
+  top: 0; 
+  left: 0; 
+  right: 0; 
   margin: 0 auto;
-  background-color: transparent; /* Colore di sfondo desiderato */
-  padding: 1rem; /* Spazio interno per una migliore leggibilità */
-  z-index: 2; /* Per essere sopra le bolle e le frecce */
+  background-color: transparent; 
+  padding: 1rem; 
+  z-index: 2; 
 }
 
 .ita {
@@ -90,7 +90,7 @@ html {
 .menu-toggle {
   z-index: 4;
   background-color: var(--secondary-color);
-  padding: 0 0.2%; /* Spazio interno per rendere lo sfondo più visibile */
+  padding: 0 0.2%; 
   border-radius: 12.5px;
   transition: opacity 0.3s ease;
 }

@@ -18,8 +18,7 @@ const itaExperiences = [
     ],
   },
   {
-    title:
-      'Insegnante Di Ripetizioni',
+    title: 'Insegnante Di Ripetizioni',
     startDate: '01/03/2023',
     endDate: 'In corso',
     jobLocation: 'Remoto / Da casa',
@@ -134,7 +133,7 @@ const engExperiences = [
     title: 'Volunteer Associate',
     startDate: '10/15/2019',
     endDate: '03/15/2020',
-    jobLocation: 'L\'Oasi - Cesena',
+    jobLocation: "L'Oasi - Cesena",
     descriptionList: [
       'Maintenance of Windows and Mac computers (Hard Disk cloning with subsequent replacement, RAM replacement, Computer optimization as per privacy law)',
       "Creation of the cooperative's website",
@@ -147,7 +146,7 @@ const engExperiences = [
     title: 'Volunteer Associate',
     startDate: '07/01/2016',
     endDate: '01/31/2018',
-    jobLocation: 'L\'Oasi - Cesena',
+    jobLocation: "L'Oasi - Cesena",
     descriptionList: [
       "Creation of the cooperative's website",
       'On-site and remote assistance for problem resolution with hardware and software usage',
@@ -239,7 +238,7 @@ function loadGallery() {
       <ul class="job-description">${descriptionList}</ul>
     </div>
   `
-  // Aggiorna il testo delle descrizioni nel carosello
+
   leftView.innerHTML = `
     <h2>${experiences[prevExp].title}</h2>
   `
@@ -286,7 +285,7 @@ function scrollRight() {
       loadGallery()
       mainView.classList.remove('animate-slide-right')
       rightView.classList.remove('animate-slide-right')
-    }, 500);
+    }, 500)
   }
 }
 
@@ -312,38 +311,31 @@ function scrollLeft() {
       loadGallery()
       mainView.classList.remove('animate-slide-left')
       leftView.classList.remove('animate-slide-left')
-    }, 500);
+    }, 500)
   }
 }
 
 let touchStartX = 0
 let touchEndX = 0
 
-// Aggiungi un listener per l'evento touchstart
 document
   .getElementById('mainView')
   .addEventListener('touchstart', function (e) {
     touchStartX = e.touches[0].clientX
   })
 
-// Aggiungi un listener per l'evento touchmove
 document.getElementById('mainView').addEventListener('touchmove', function (e) {
   touchEndX = e.touches[0].clientX
 })
 
-// Aggiungi un listener per l'evento touchend
 document.getElementById('mainView').addEventListener('touchend', function () {
-  // Calcola la differenza tra le coordinate iniziali e finali
   const swipeDistance = touchEndX - touchStartX
 
-  // Imposta una soglia per determinare se si tratta di uno swipe significativo
-  const swipeThreshold = 50 // Puoi regolare questa soglia secondo le tue esigenze
+  const swipeThreshold = 50
 
   if (swipeDistance > swipeThreshold) {
-    // Swipe verso destra
     scrollLeft()
   } else if (swipeDistance < -swipeThreshold) {
-    // Swipe verso sinistra
     scrollRight()
   }
 })

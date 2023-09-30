@@ -8,16 +8,16 @@
 }
 
 .uni-image {
-  width: auto; /* Imposta la dimensione dell'immagine del profilo */
-  height: 20vh; /* Imposta la dimensione dell'immagine del profilo */
-  border-radius: 50%; /* Rendi l'immagine del profilo circolare */
+  width: auto;
+  height: 20vh;
+  border-radius: 50%;
   margin: 5rem 0 1rem;
-  /* Imposta l'ombra dell'immagine del profilo sfocata e verso il basso */
+
   box-shadow: 0 0 0 8px rgb(239, 239, 239);
 }
 
 .study-progress {
-  font-size: 1rem; /* Imposta la dimensione del carattere per la biografia */
+  font-size: 1rem;
   color: #666666;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .edu-studies {
-  font-size: 1.2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+  font-size: 1.2rem;
   color: #333333;
 }
 
@@ -39,7 +39,10 @@
   border-radius: 50%;
   background: #ffcdb2;
   overflow: hidden;
-  background-image: conic-gradient(var(--primary-color) 83%, var(--secondary-color) 0);
+  background-image: conic-gradient(
+    var(--primary-color) 83%,
+    var(--secondary-color) 0
+  );
 }
 
 .circle-progress .inner {
@@ -66,11 +69,11 @@
 
 @media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1200px) {
   .edu-studies {
-    font-size: 2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+    font-size: 2rem;
   }
 
   .study-progress {
-    font-size: 1.4rem; /* Imposta la dimensione del carattere per la biografia */
+    font-size: 1.4rem;
   }
 }
 
@@ -80,17 +83,17 @@
   }
 
   .uni-image {
-    width: auto; /* Imposta la dimensione dell'immagine del profilo */
-    height: 30vh; /* Imposta la dimensione dell'immagine del profilo */
+    width: auto;
+    height: 30vh;
     margin: 0 0 0 2vw;
   }
 
   .edu-studies {
-    font-size: 2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+    font-size: 2rem;
   }
 
   .study-progress {
-    font-size: 1.4rem; /* Imposta la dimensione del carattere per la biografia */
+    font-size: 1.4rem;
   }
 
   .circle-progress {
@@ -119,17 +122,17 @@
   }
 
   .uni-image {
-    width: 15vw; /* Imposta la dimensione dell'immagine del profilo */
-    height: auto; /* Imposta la dimensione dell'immagine del profilo */
+    width: 15vw;
+    height: auto;
     margin: 0 0 5vh 2vw;
   }
 
   .edu-studies {
-    font-size: 1.2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+    font-size: 1.2rem;
   }
 
   .study-progress {
-    font-size: 1rem; /* Imposta la dimensione del carattere per la biografia */
+    font-size: 1rem;
   }
 
   .circle-progress {
@@ -149,16 +152,16 @@
 
 @media screen and (min-width: 1200px) {
   .uni-image {
-    width: auto; /* Imposta la dimensione dell'immagine del profilo */
-    height: 20vh; /* Imposta la dimensione dell'immagine del profilo */
+    width: auto;
+    height: 20vh;
   }
 
   .edu-studies {
-    font-size: 2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+    font-size: 2rem;
   }
 
   .study-progress {
-    font-size: 1.5rem; /* Imposta la dimensione del carattere per la biografia */
+    font-size: 1.5rem;
   }
 
   .circle-progress {

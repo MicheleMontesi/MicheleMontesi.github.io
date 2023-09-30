@@ -10,50 +10,32 @@
 .social-link {
   display: inline-block;
   margin: 0 10px;
-  width: 10vh; /* Imposta la larghezza delle bolle social */
-  height: 10vh; /* Imposta l'altezza delle bolle social */
-  border-radius: 50%; /* Rendi le bolle social circolari */
-  background-color: #fefefe; /* Colore di sfondo di LinkedIn, puoi personalizzarlo */
+  width: 10vh;
+  height: 10vh;
+  border-radius: 50%;
+  background-color: #fefefe;
   text-align: center;
-  line-height: 50px; /* Altezza uguale alla larghezza per centrare il testo verticalmente */
-  font-size: 1.5rem; /* Imposta la dimensione del carattere per l'icona */
-  text-decoration: none; /* Rimuovi il sottolineato dei link */
-  transition: background-color 0.3s ease; /* Aggiungi una transizione per il cambio di colore al passaggio del mouse */
+  line-height: 50px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .social-link:hover {
-  /* Ingrandisci un po' e genera un'ombra */
   transform: scale(1.1);
-  /* animazione di transizione */
+
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 0 8px rgb(239, 239, 239);
-  color: #fefefe; /* Cambia il colore del testo al passaggio del mouse */
+  color: #fefefe;
 }
 
 .social-link:not(:hover) {
-  /* animazione di transizione */
   transition: all 0.3s ease-in-out;
 }
 
-/* Personalizza lo stile delle icone delle bolle social */
 .linkedin img {
-  width: 100%; /* Imposta la larghezza dell'immagine dell'icona */
-  height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni */
-}
-
-@media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1200px) {
-  /* Se serve lo lascio qui */
-} 
-
-@media screen and (orientation: landscape) and (max-width: 1200px) {
-  /* .social-links {
-    flex-direction: column;
-    margin: 10vh 1.5vw 15vh 12vw;
-  }
-
-  .social-link {
-    margin: 10px 0;
-  } */
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (orientation: landscape) and (max-width: 1000px) {
@@ -61,8 +43,4 @@
     width: 10vw;
     height: 10vw;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  /* Se serve lo lascio qui */
 }

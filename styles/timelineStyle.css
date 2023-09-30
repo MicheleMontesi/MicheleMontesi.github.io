@@ -1,24 +1,23 @@
 .timeline-labels {
-  position: fixed; /* Posizionamento fisso */
-  bottom: 1%; /* Posiziona la timeline in basso */
-  left: 2.5%; /* Posiziona la timeline a sinistra */
-  width: 90%; /* Occupa l'intera larghezza disponibile */
+  position: fixed;
+  bottom: 1%;
+  left: 2.5%;
+  width: 90%;
   height: 2rem;
   align-items: center;
   display: flex;
-  justify-content: space-around; /* Allinea le etichette orizzontalmente */
-  background-color: var(--secondary-color); /* Sfondo trasparente */
-  padding: 0 2.5%; /* Spazio interno per rendere lo sfondo più visibile */
-  z-index: 3; /* Assicura che sia sopra il contenuto */
+  justify-content: space-around;
+  background-color: var(--secondary-color);
+  padding: 0 2.5%;
+  z-index: 3;
   border-radius: 25px;
 }
-
 
 .timeline-label {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 20px 0; /* Distanza verticale maggiore tra le etichette */
+  margin: 20px 0;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
@@ -31,33 +30,27 @@
   margin-right: 0;
 }
 
-/* Stile per voce non selezionata */
 .timeline-label:not(.selected) {
   font-weight: normal;
-  color: #333333; /* Colore per voce non selezionata */
+  color: #333333;
 }
 
-/* Stile per voce selezionata */
 .timeline-label.selected {
   font-weight: bold;
-  color: var(--primary-color); /* Colore per voce selezionata */
+  color: var(--primary-color);
 }
-
-/* @media screen and (orientation: landscape) and (max-width: 1200px) {
-
-} */
 
 @media screen and (min-width: 1200px) {
   .timeline-labels {
     position: fixed;
     top: 50%;
-    right: 10px; /* Allinea le etichette a destra */
-    transform: translateY(-50%); /* Centro verticalmente */
+    right: 10px;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    align-items: start; /* Centra orizzontalmente */
-    justify-content: center; /* Centra verticalmente */
-    background-color: var(--secondary-color); /* Sfondo trasparente */
+    align-items: start;
+    justify-content: center;
+    background-color: var(--secondary-color);
     border-radius: 25px;
     width: 8rem;
     left: auto;
@@ -70,7 +63,7 @@
   .timeline-label #timeline-icon {
     margin-right: 10px;
   }
-  
+
   .timeline-label .timeline-text {
     display: block;
     flex-grow: 1;

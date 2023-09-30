@@ -14,11 +14,11 @@
 }
 
 .profile-image {
-  width: auto; /* Imposta la dimensione dell'immagine del profilo */
-  height: 20vh; /* Imposta la dimensione dell'immagine del profilo */
-  border-radius: 50%; /* Rendi l'immagine del profilo circolare */
-  margin-right: 20px; /* Aggiungi spazio tra l'immagine e i dettagli del profilo */
-  /* Imposta l'ombra dell'immagine del profilo sfocata e verso il basso */
+  width: auto;
+  height: 20vh;
+  border-radius: 50%;
+  margin-right: 20px;
+
   box-shadow: 0 0 0 8px rgb(239, 239, 239);
 }
 
@@ -28,13 +28,13 @@
 }
 
 .name {
-  font-size: 1.5rem; /* Imposta la dimensione del carattere per il nome */
+  font-size: 1.5rem;
   color: #333333;
   margin: 0;
 }
 
 .surname {
-  font-size: 1.2rem; /* Imposta la dimensione del carattere per il cognome */
+  font-size: 1.2rem;
   color: #666666;
   margin: 0;
 }
@@ -44,39 +44,39 @@
 }
 
 .studies {
-  font-size: 1.2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+  font-size: 1.2rem;
   color: #333333;
 }
 
 .biography {
-  font-size: 1rem; /* Imposta la dimensione del carattere per la biografia */
+  font-size: 1rem;
   color: #666666;
   margin: 0 2vw;
 }
 
 @media screen and (orientation: portrait) and (min-width: 700px) and (max-width: 1200px) {
   .name {
-    font-size: 2rem; /* Imposta la dimensione del carattere per il nome */
+    font-size: 2rem;
     color: #333333;
     margin: 0;
   }
 
   .surname {
-    font-size: 1.8rem; /* Imposta la dimensione del carattere per il cognome */
+    font-size: 1.8rem;
     color: #666666;
     margin: 0;
   }
 
   .studies {
-    font-size: 2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+    font-size: 2rem;
     color: #333333;
   }
 
   .biography {
-    font-size: 1.4rem; /* Imposta la dimensione del carattere per la biografia */
+    font-size: 1.4rem;
     color: #666666;
   }
-} 
+}
 
 @media screen and (orientation: landscape) and (max-width: 1200px) {
   .about {
@@ -96,18 +96,18 @@
   }
 
   .profile-image {
-    width: 15vw; /* Imposta la dimensione dell'immagine del profilo */
-    height: auto; /* Imposta la dimensione dell'immagine del profilo */
+    width: 15vw;
+    height: auto;
     margin-bottom: 2.5vh;
     margin-right: 0;
   }
 
   .name {
-    font-size: 2rem; /* Imposta la dimensione del carattere per il nome */
+    font-size: 2rem;
   }
 
   .surname {
-    font-size: 1.8rem; /* Imposta la dimensione del carattere per il cognome */
+    font-size: 1.8rem;
   }
 
   .description {
@@ -115,11 +115,11 @@
   }
 
   .studies {
-    font-size: 2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+    font-size: 2rem;
   }
 
   .biography {
-    font-size: 1.4rem; /* Imposta la dimensione del carattere per la biografia */
+    font-size: 1.4rem;
   }
 }
 
@@ -141,18 +141,18 @@
   }
 
   .profile-image {
-    width: 15vw; /* Imposta la dimensione dell'immagine del profilo */
-    height: auto; /* Imposta la dimensione dell'immagine del profilo */
+    width: 15vw;
+    height: auto;
     margin-bottom: 2.5vh;
     margin-right: 0;
   }
 
   .name {
-    font-size: 1.5rem; /* Imposta la dimensione del carattere per il nome */
+    font-size: 1.5rem;
   }
 
   .surname {
-    font-size: 1.2rem; /* Imposta la dimensione del carattere per il cognome */
+    font-size: 1.2rem;
   }
 
   .description {
@@ -160,11 +160,11 @@
   }
 
   .studies {
-    font-size: 1.2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+    font-size: 1.2rem;
   }
 
   .biography {
-    font-size: 1rem; /* Imposta la dimensione del carattere per la biografia */
+    font-size: 1rem;
   }
 }
 
@@ -174,23 +174,23 @@
   }
 
   .profile-image {
-    width: 15vw; /* Imposta la dimensione dell'immagine del profilo */
-    height: auto; /* Imposta la dimensione dell'immagine del profilo */
+    width: 15vw;
+    height: auto;
   }
 
   .name {
-    font-size: 2rem; /* Imposta la dimensione del carattere per il nome */
+    font-size: 2rem;
   }
 
   .surname {
-    font-size: 1.5rem; /* Imposta la dimensione del carattere per il cognome */
+    font-size: 1.5rem;
   }
 
   .studies {
-    font-size: 2rem; /* Imposta la dimensione del carattere per la descrizione degli studi */
+    font-size: 2rem;
   }
 
   .biography {
-    font-size: 1.5rem; /* Imposta la dimensione del carattere per la biografia */
+    font-size: 1.5rem;
   }
 }
