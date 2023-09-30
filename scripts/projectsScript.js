@@ -135,6 +135,7 @@ function loadProjects() {
         projectImage.src = project.imageSrc
         projectTitle.textContent = project.title
         projectDescription.textContent = project.description
+        projectLink.textContent = currentLanguage === 'ita' ? "Visita la repo" : "Go to the repository"
         projectLink.href = project.link
         // Mostra il modale
         projectDetails.style.display = 'flex'
