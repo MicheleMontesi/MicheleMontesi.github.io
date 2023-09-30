@@ -327,22 +327,8 @@ function createPageIndicators() {
     if (i === mainExp) {
       indicator.classList.add('active');
     }
-
-    indicator.addEventListener('click', () => {
-      goToPage(i);
-    });
-
     pageIndicatorsContainer.appendChild(indicator);
   }
-}
-
-function goToPage(pageIndex) {
-  prevExp = mainExp;
-  mainExp = pageIndex;
-  nextExp = (pageIndex + 1) % experiences.length;
-
-  loadGallery();
-  createPageIndicators();
 }
 
 let touchStartX = 0
