@@ -286,7 +286,7 @@ function scrollRight() {
       mainView.classList.remove('animate-slide-right')
       rightView.classList.remove('animate-slide-right')
     }, 500)
-    createPageIndicators();
+    createPageIndicators()
   }
 }
 
@@ -313,21 +313,21 @@ function scrollLeft() {
       mainView.classList.remove('animate-slide-left')
       leftView.classList.remove('animate-slide-left')
     }, 500)
-    createPageIndicators();
+    createPageIndicators()
   }
 }
 
 function createPageIndicators() {
-  const pageIndicatorsContainer = document.getElementById('page-indicators');
-  pageIndicatorsContainer.innerHTML = '';
+  const pageIndicatorsContainer = document.getElementById('page-indicators')
+  pageIndicatorsContainer.innerHTML = ''
 
   for (let i = 0; i < experiences.length; i++) {
-    const indicator = document.createElement('div');
-    indicator.classList.add('page-indicator');
+    const indicator = document.createElement('div')
+    indicator.classList.add('page-indicator')
     if (i === mainExp) {
-      indicator.classList.add('active');
+      indicator.classList.add('active')
     }
-    pageIndicatorsContainer.appendChild(indicator);
+    pageIndicatorsContainer.appendChild(indicator)
   }
 }
 
@@ -369,4 +369,4 @@ document.addEventListener('keyup', function (e) {
 })
 
 loadGallery()
-createPageIndicators();
+createPageIndicators()
