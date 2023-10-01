@@ -169,6 +169,12 @@
   }
 }
 
+@media screen and (orientation: landscape) and (max-width: 1000px) {
+  #proj-image {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   :root {
     --projects-round-dimension: 8vw;
