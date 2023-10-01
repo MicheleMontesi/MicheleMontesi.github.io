@@ -317,17 +317,53 @@ function scrollLeft() {
   }
 }
 
+function goToExperience(index) {
+  if (index === mainExp) {
+    return; // Non fare nulla se si cerca di andare alla scheda già visualizzata
+  }
+
+  prevExp = mainExp;
+  mainExp = index;
+
+  if (index === 0) {
+    prevExp = experiences.length - 1;
+    nextExp = index + 1;
+    isAtLeftEnd = true;
+    isAtRightEnd = false;
+  } else if (index === experiences.length - 1) {
+    nextExp = 0;
+    prevExp = index - 1;
+    isAtRightEnd = true;
+    isAtLeftEnd = false;
+  } else {
+    nextExp = index + 1;
+    prevExp = index - 1;
+    isAtLeftEnd = false;
+    isAtRightEnd = false;
+  }
+
+  loadGallery();
+  createPageIndicators()
+}
+
 function createPageIndicators() {
-  const pageIndicatorsContainer = document.getElementById('page-indicators')
-  pageIndicatorsContainer.innerHTML = ''
+  const pageIndicatorsContainer = document.getElementById('page-indicators');
+  pageIndicatorsContainer.innerHTML = '';
 
   for (let i = 0; i < experiences.length; i++) {
-    const indicator = document.createElement('div')
-    indicator.classList.add('page-indicator')
+    const indicator = document.createElement('div');
+    indicator.classList.add('page-indicator');
     if (i === mainExp) {
-      indicator.classList.add('active')
+      indicator.classList.add('active');
     }
-    pageIndicatorsContainer.appendChild(indicator)
+
+    // Aggiungi un gestore di eventi di click a ciascun indicatore di pagina
+    indicator.addEventListener('click', () => {
+      // Chiama una funzione per visualizzare la scheda corrispondente
+      goToExperience(i);
+    });
+
+    pageIndicatorsContainer.appendChild(indicator);
   }
 }
 
