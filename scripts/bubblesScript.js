@@ -100,8 +100,9 @@ closeBtn.addEventListener('click', function () {
   modal.style.display = 'none'
 })
 
-let closeModalBG = document.querySelector('.modal-container')
+let closeModalBG = document.getElementById('modalSkills')
 closeModalBG.addEventListener('click', function (event) {
+  console.log('entro')
   if (
     !event.target.classList.contains('modal-content') &&
     !event.target.classList.contains('modal-body') &&

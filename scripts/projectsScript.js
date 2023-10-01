@@ -115,6 +115,26 @@ document
 
 let projectsData = currentLanguage === 'ita' ? itaProjectsData : engProjectsData
 
+closeBtn.addEventListener('click', function () {
+  let modal = document.getElementById('proj-modal')
+  modal.style.display = 'none'
+})
+
+let closeProjModalBG = document.getElementById('proj-modal')
+closeProjModalBG.addEventListener('click', function (event) {
+  if (
+    !event.target.classList.contains('modal-content') &&
+    !event.target.classList.contains('modal-body') &&
+    event.target.tagName !== 'P' &&
+    event.target.tagName !== 'H2' &&
+    event.target.tagName !== 'IMG' &&
+    event.target.tagName !== 'A'
+  ) {
+    let modalId = this.getAttribute('id')
+    closeModal(modalId)
+  }
+})
+
 function onLanguageChangeProj() {
   currentLanguage = languageSelectorExp.value
   projectsData = currentLanguage === 'ita' ? itaProjectsData : engProjectsData
@@ -131,16 +151,14 @@ function loadProjects() {
       })
 
       if (project) {
-        // Se l'oggetto è stato trovato, popola il modale con i suoi dati
         projectImage.src = project.imageSrc
         projectTitle.textContent = project.title
         projectDescription.textContent = project.description
-        projectLink.textContent = currentLanguage === 'ita' ? "Visita la repo" : "Go to the repository"
+        projectLink.textContent =
+          currentLanguage === 'ita' ? 'Visita la repo' : 'Go to the repository'
         projectLink.href = project.link
-        // Mostra il modale
         projectDetails.style.display = 'flex'
       } else {
-        // Nascondi il modale se l'oggetto non è stato trovato
         projectDetails.style.display = 'none'
       }
     })
