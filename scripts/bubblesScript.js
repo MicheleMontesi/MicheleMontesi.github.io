@@ -46,6 +46,7 @@ var bubbleData = {
       'Ansible',
       'Active Directory',
       'Freeipa',
+      'Pacchetto Office (Excel, Word, Powerpoint, ...)',
     ],
     engList: [
       'Docker (Docker compose, Docker Swarm, Docker container)',
@@ -53,6 +54,7 @@ var bubbleData = {
       'Ansible',
       'Active Directory',
       'Freeipa',
+      'Office Package (Excel, Word, Powerpoint, ...)',
     ],
   },
 }
