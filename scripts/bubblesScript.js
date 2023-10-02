@@ -89,6 +89,11 @@ function loadSkills() {
   })
 }
 
+openModalBtns.forEach((bubble) => {
+  const randomDuration = Math.random() * (15 - 4) + 4
+  bubble.style.animationDuration = `${randomDuration}s`
+})
+
 function closeModal(modalId) {
   let modal = document.getElementById(modalId)
   modal.style.display = 'none'
