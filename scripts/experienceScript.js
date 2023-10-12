@@ -41,7 +41,7 @@ const itaExperiences = [
     ],
   },
   {
-    title: 'Socio Volontario',
+    title: 'Tecnico IT',
     startDate: '15/10/2019',
     endDate: '15/03/2020',
     jobLocation: "L'Oasi - Cesena",
@@ -51,41 +51,6 @@ const itaExperiences = [
       "Assistenza in loco ed in remoto per la risoluzione dei problemi con l'utilizzo dell'hardware e del software",
       'Installazione e gestione parte software (Microsoft Office, Antivirus, TeamViewer)',
       'Gestione autonoma del lavoro in base agli obiettivi richiesti',
-    ],
-  },
-  {
-    title: 'Socio Volontario',
-    startDate: '01/07/2016',
-    endDate: '31/01/2018',
-    jobLocation: "L'Oasi - Cesena",
-    descriptionList: [
-      'Creazione sito della cooperativa',
-      "Assistenza in loco ed in remoto per la risoluzione dei problemi con l'utilizzo dell'hardware e del software",
-      'Installazione e gestione parte software (Microsoft Office, Antivirus)',
-    ],
-  },
-  {
-    title: 'Tirocinante',
-    startDate: '15/01/2018',
-    endDate: '03/02/2018',
-    jobLocation: 'Gestiass - Cesena',
-    descriptionList: [
-      'Creazione di file Excel',
-      'Supporto informatico',
-      'Gestione sinistri',
-      'Utilizzo piattaforme aziendali',
-      'Interazioni telefoniche e personali con clienti',
-    ],
-  },
-  {
-    title: 'Tirocinante',
-    startDate: '22/05/2017',
-    endDate: '17/06/2017',
-    jobLocation: 'Auto Sat S.P.A - Cesena',
-    descriptionList: [
-      'Supporto informatico',
-      'Gestione magazzino',
-      'Creazione di grafiche',
     ],
   },
 ]
@@ -130,7 +95,7 @@ const engExperiences = [
     ],
   },
   {
-    title: 'Volunteer Associate',
+    title: 'IT Support',
     startDate: '10/15/2019',
     endDate: '03/15/2020',
     jobLocation: "L'Oasi - Cesena",
@@ -140,41 +105,6 @@ const engExperiences = [
       'On-site and remote assistance for problem resolution with hardware and software usage',
       'Installation and management of software (Microsoft Office, Antivirus, TeamViewer)',
       'Autonomous work management based on required objectives',
-    ],
-  },
-  {
-    title: 'Volunteer Associate',
-    startDate: '07/01/2016',
-    endDate: '01/31/2018',
-    jobLocation: "L'Oasi - Cesena",
-    descriptionList: [
-      "Creation of the cooperative's website",
-      'On-site and remote assistance for problem resolution with hardware and software usage',
-      'Installation and management of software (Microsoft Office, Antivirus)',
-    ],
-  },
-  {
-    title: 'Intern',
-    startDate: '01/15/2018',
-    endDate: '02/03/2018',
-    jobLocation: 'Gestiass - Cesena',
-    descriptionList: [
-      'Creation of Excel files',
-      'IT support',
-      'Claims management',
-      'Usage of company platforms',
-      'Phone and in-person interactions with clients',
-    ],
-  },
-  {
-    title: 'Intern',
-    startDate: '05/22/2017',
-    endDate: '06/17/2017',
-    jobLocation: 'Auto Sat S.P.A - Cesena',
-    descriptionList: [
-      'IT support',
-      'Inventory management',
-      'Creation of graphics',
     ],
   },
 ]
