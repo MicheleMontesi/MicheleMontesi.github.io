@@ -3,6 +3,22 @@ galleryView.style.display = 'flex'
 
 const itaExperiences = [
   {
+    title: 'Full-stack Developer',
+    startDate: '30/10/2023',
+    endDate: 'In corso',
+    jobLocation: 'Forlì / Remoto',
+    descriptionList: [
+      'Sviluppo di software per modernizzare il sistema di gestione dei dati aziendali',
+      'Sviluppo in C#',
+      'Sviluppo in Angular',
+      'Sviluppo front-end e back-end',
+      'Sviluppo di REST API',
+      'Sviluppo di applicazioni web',
+      'Sviluppo di applicazioni desktop',
+      'Sviluppo di applicazioni mobile'
+    ],
+  },
+  {
     title: 'Tirocinante Programmatore',
     startDate: '05/06/2023',
     endDate: '05/09/2023',
@@ -20,7 +36,7 @@ const itaExperiences = [
   {
     title: 'Insegnante Di Ripetizioni',
     startDate: '01/03/2023',
-    endDate: 'In corso',
+    endDate: '30/10/2023',
     jobLocation: 'Remoto / Da casa',
     descriptionList: [
       'Ripetizioni di C, Python e Informatica di base',
@@ -56,6 +72,22 @@ const itaExperiences = [
 ]
 
 const engExperiences = [
+  {
+    title: 'Full-stack Developer',
+    startDate: '10/30/2023',
+    endDate: 'In progress',
+    jobLocation: 'Forlì / Remote',
+    descriptionList: [
+      'Development of software to modernize the company data management system',
+      'Development in C#',
+      'Development in Angular',
+      'Front-end and back-end development',
+      'Development of REST APIs',
+      'Development of web applications',
+      'Development of desktop applications',
+      'Development of mobile applications',
+    ],
+  },
   {
     title: 'Intern Programmer',
     startDate: '06/05/2023',
