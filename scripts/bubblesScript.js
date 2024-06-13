@@ -24,7 +24,6 @@ const bubbleData = {
       "Go/Golang",
       "Sviluppo di applicazioni mobile",
       "Conoscenza di base di programmazione con OpenMP, MPI",
-      "Sviluppo di servizi SSO (Single Sign-On)"
     ],
     engList: [
       "Python",
@@ -46,7 +45,6 @@ const bubbleData = {
       "Go/Golang",
       "Mobile application development",
       "Basic knowledge of programming with OpenMP, MPI",
-      "SSO (Single Sign-On) service development"
     ],
   },
   openModal2: {
@@ -60,6 +58,7 @@ const bubbleData = {
     engTitle: "IT Tools",
     itaList: [
       "Docker (Docker compose, Docker Swarm, Docker container)",
+      "Sviluppo di servizi SSO (Single Sign-On)",
       "Teleport",
       "Ansible",
       "Active Directory",
@@ -68,6 +67,7 @@ const bubbleData = {
     ],
     engList: [
       "Docker (Docker compose, Docker Swarm, Docker container)",
+      "SSO (Single Sign-On) service development",
       "Teleport",
       "Ansible",
       "Active Directory",

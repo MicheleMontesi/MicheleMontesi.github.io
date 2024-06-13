@@ -6,7 +6,7 @@ const itaExperiences = [
     title: 'Full-stack Developer',
     startDate: '30/10/2023',
     endDate: 'In corso',
-    jobLocation: 'Forlì / Remoto',
+    jobLocation: 'Egaf Edizioni Srl - Forlì / Remoto',
     descriptionList: [
       'Sviluppo di software per modernizzare il sistema di gestione dei dati aziendali',
       'Sviluppo in C#',
@@ -76,7 +76,7 @@ const engExperiences = [
     title: 'Full-stack Developer',
     startDate: '10/30/2023',
     endDate: 'In progress',
-    jobLocation: 'Forlì / Remote',
+    jobLocation: 'Egaf Edizioni Srl - Forlì / Remote',
     descriptionList: [
       'Development of software to modernize the company data management system',
       'Development in C#',
