@@ -4,8 +4,21 @@ galleryView.style.display = 'flex'
 const itaExperiences = [
   {
     title: 'Full-stack Developer',
-    startDate: '30/10/2023',
+    startDate: '02/09/2024',
     endDate: 'In corso',
+    jobLocation: 'Cooperativa Sole - Gatteo',
+    descriptionList: [
+        'Sviluppo gestionale per la cooperativa',
+        'Sviluppo in C#',
+        'Sviluppo in Angular',
+        'Sviluppo front-end e back-end',
+        'Sviluppo di REST API'
+    ],
+  },
+  {
+    title: 'Full-stack Developer',
+    startDate: '30/10/2023',
+    endDate: '23/08/2024',
     jobLocation: 'Egaf Edizioni Srl - Forlì / Remoto',
     descriptionList: [
       'Sviluppo di software per modernizzare il sistema di gestione dei dati aziendali',
@@ -74,8 +87,21 @@ const itaExperiences = [
 const engExperiences = [
   {
     title: 'Full-stack Developer',
-    startDate: '10/30/2023',
+    startDate: '09/02/2024',
     endDate: 'In progress',
+    jobLocation: 'Cooperativa Sole - Gatteo',
+    descriptionList: [
+      'Development of management software for the cooperative',
+      'Development in C#',
+      'Development in Angular',
+      'Front-end and back-end development',
+      'Development of REST APIs',
+    ],
+  },
+  {
+    title: 'Full-stack Developer',
+    startDate: '10/30/2023',
+    endDate: '08/23/2024',
     jobLocation: 'Egaf Edizioni Srl - Forlì / Remote',
     descriptionList: [
       'Development of software to modernize the company data management system',

@@ -59,6 +59,7 @@ const bubbleData = {
     itaList: [
       "Docker (Docker compose, Docker Swarm, Docker container)",
       "Sviluppo di servizi SSO (Single Sign-On)",
+      "MinIO",
       "Teleport",
       "Ansible",
       "Active Directory",
@@ -67,6 +68,7 @@ const bubbleData = {
     ],
     engList: [
       "Docker (Docker compose, Docker Swarm, Docker container)",
+      "MinIO",
       "SSO (Single Sign-On) service development",
       "Teleport",
       "Ansible",
