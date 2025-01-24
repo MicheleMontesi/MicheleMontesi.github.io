@@ -1,387 +1,364 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="icons/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/languageStyle.css" />
-    <link rel="stylesheet" href="styles/timelineStyle.css" />
-    <link rel="stylesheet" href="styles/aboutStyle.css" />
-    <link rel="stylesheet" href="styles/educationStyle.css" />
-    <link rel="stylesheet" href="styles/experienceStyle.css" />
-    <link rel="stylesheet" href="styles/contactsStyle.css" />
-    <link rel="stylesheet" href="styles/projectsStyle.css" />
-    <link
-      rel="stylesheet"
-      href="styles/bubblesSkillsStyle.css"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <title>CV - Michele Montesi</title>
-  </head>
-  <body>
-    <div class="menu-toggle">
-      <img src="icons/hamburger-menu.svg" alt="Menu" />
-    </div>
-    <div class="language-menu-container">
-      <div class="language-menu">
-        <label for="language">Language</label>
-        <select id="language">
-          <option value="eng">English</option>
-          <option value="ita">Italiano</option>
-        </select>
-      </div>
-    </div>
 
-    <div class="timeline-labels">
-      <div class="timeline-label" data-scroll-to="about">
-        <span class="material-symbols-outlined" id="timeline-icon">person</span>
-        <div class="ita">
-          <span class="timeline-text">Chi sono</span>
-        </div>
-        <div class="eng">
-          <span class="timeline-text">About</span>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="icons/logo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/languageStyle.css" />
+  <link rel="stylesheet" href="styles/timelineStyle.css" />
+  <link rel="stylesheet" href="styles/aboutStyle.css" />
+  <link rel="stylesheet" href="styles/educationStyle.css" />
+  <link rel="stylesheet" href="styles/experienceStyle.css" />
+  <link rel="stylesheet" href="styles/contactsStyle.css" />
+  <link rel="stylesheet" href="styles/projectsStyle.css" />
+  <link rel="stylesheet" href="styles/bubblesSkillsStyle.css" type="text/css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>CV - Michele Montesi</title>
+</head>
+
+<body>
+  <div class="menu-toggle">
+    <img src="icons/hamburger-menu.svg" alt="Menu" />
+  </div>
+  <div class="language-menu-container">
+    <div class="language-menu">
+      <label for="language">Language</label>
+      <select id="language">
+        <option value="eng">English</option>
+        <option value="ita">Italiano</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="timeline-labels">
+    <div class="timeline-label" data-scroll-to="about">
+      <span class="material-symbols-outlined" id="timeline-icon">person</span>
+      <div class="ita">
+        <span class="timeline-text">Chi sono</span>
       </div>
-      <div class="timeline-label" data-scroll-to="skills">
-        <span class="material-symbols-outlined" id="timeline-icon">code</span>
-        <div class="ita">
-          <span class="timeline-text">Competenze</span>
-        </div>
-        <div class="eng">
-          <span class="timeline-text">Skills</span>
-        </div>
-      </div>
-      <div class="timeline-label" data-scroll-to="education">
-        <span class="material-symbols-outlined" id="timeline-icon">school</span>
-        <div class="ita">
-          <span class="timeline-text">Formazione</span>
-        </div>
-        <div class="eng">
-          <span class="timeline-text">Education</span>
-        </div>
-      </div>
-      <div class="timeline-label" data-scroll-to="experience">
-        <span class="material-symbols-outlined" id="timeline-icon">work</span>
-        <div class="ita">
-          <span class="timeline-text">Esperienza lavorativa</span>
-        </div>
-        <div class="eng">
-          <span class="timeline-text">Work experience</span>
-        </div>
-      </div>
-      <div class="timeline-label" data-scroll-to="projects">
-        <span class="material-symbols-outlined" id="timeline-icon">folder</span>
-        <div class="ita">
-          <span class="timeline-text">Progetti</span>
-        </div>
-        <div class="eng">
-          <span class="timeline-text">Projects</span>
-        </div>
-      </div>
-      <div class="timeline-label" data-scroll-to="contact">
-        <span class="material-symbols-outlined" id="timeline-icon">email</span>
-        <div class="ita">
-          <span class="timeline-text">Contatti</span>
-        </div>
-        <div class="eng">
-          <span class="timeline-text">Contact</span>
-        </div>
+      <div class="eng">
+        <span class="timeline-text">About</span>
       </div>
     </div>
+    <div class="timeline-label" data-scroll-to="skills">
+      <span class="material-symbols-outlined" id="timeline-icon">code</span>
+      <div class="ita">
+        <span class="timeline-text">Competenze</span>
+      </div>
+      <div class="eng">
+        <span class="timeline-text">Skills</span>
+      </div>
+    </div>
+    <div class="timeline-label" data-scroll-to="education">
+      <span class="material-symbols-outlined" id="timeline-icon">school</span>
+      <div class="ita">
+        <span class="timeline-text">Formazione</span>
+      </div>
+      <div class="eng">
+        <span class="timeline-text">Education</span>
+      </div>
+    </div>
+    <div class="timeline-label" data-scroll-to="experience">
+      <span class="material-symbols-outlined" id="timeline-icon">work</span>
+      <div class="ita">
+        <span class="timeline-text">Esperienza lavorativa</span>
+      </div>
+      <div class="eng">
+        <span class="timeline-text">Work experience</span>
+      </div>
+    </div>
+    <div class="timeline-label" data-scroll-to="projects">
+      <span class="material-symbols-outlined" id="timeline-icon">folder</span>
+      <div class="ita">
+        <span class="timeline-text">Progetti</span>
+      </div>
+      <div class="eng">
+        <span class="timeline-text">Projects</span>
+      </div>
+    </div>
+    <div class="timeline-label" data-scroll-to="contact">
+      <span class="material-symbols-outlined" id="timeline-icon">email</span>
+      <div class="ita">
+        <span class="timeline-text">Contatti</span>
+      </div>
+      <div class="eng">
+        <span class="timeline-text">Contact</span>
+      </div>
+    </div>
+  </div>
 
-    <div class="container">
-      <section class="page" id="about">
-        <div class="ita">
-          <h1 class="title">Chi sono</h1>
-        </div>
-        <div class="eng">
-          <h1 class="title">About me</h1>
-        </div>
+  <div class="container">
+    <section class="page" id="about">
+      <div class="ita">
+        <h1 class="title">Chi sono</h1>
+      </div>
+      <div class="eng">
+        <h1 class="title">About me</h1>
+      </div>
 
-        <div class="about">
-          <div class="profile">
-            <img
-              src="images/cvPic.jpg"
-              alt="Immagine Profilo"
-              class="profile-image"
-            />
-            <div class="profile-details">
-              <p class="name">Michele</p>
-              <p class="surname">Montesi</p>
-            </div>
-          </div>
-          <div class="description">
-            <div class="ita">
-              <p class="studies">
-                Studente presso<br />
-                Ingegneria E Scienze Informatiche
-              </p>
-            </div>
-            <div class="eng">
-              <p class="studies">
-                Student at<br />
-                Computer Science And Engineering
-              </p>
-            </div>
-            <div class="ita">
-              <p class="biography">
-                Sono impegnato in una continua ricerca di conoscenza,<br />
-                cercando di unire la mia passione per la tecnologia <br />
-                con una forte dedizione al lavoro di squadra e
-                all'eccellenza.<br />
-                Come aspirante ingegnere informatico, mi sento a mio agio di
-                fronte alle sfide, <br />
-                risolvendo problemi complessi e rimanendo all'avanguardia
-                dell'innovazione.
-              </p>
-            </div>
-            <div class="eng">
-              <p class="biography">
-                I'm on a relentless pursuit of knowledge,<br />
-                striving to merge my passion for technology<br />
-                with a strong dedication to teamwork and excellence.<br />
-                As an aspiring computer engineer, I thrive on challenges,<br />
-                solving complex problems, and staying at the forefront of
-                innovation.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="page" id="skills">
-        <div class="ita">
-          <h1 class="title">Competenze</h1>
-        </div>
-        <div class="eng">
-          <h1 class="title">Skills</h1>
-        </div>
-        <div class="bubbles-container">
-          <div class="bubble" id="openModal1">
-            <div class="centered-content">
-              <div class="ita">
-                <h1 id="modalTitle">Linguaggi di Programmazione</h1>
-              </div>
-              <div class="eng">
-                <h1 id="modalTitle">Programming Language</h1>
-              </div>
-            </div>
-          </div>
-          <div class="bubble" id="openModal2">
-            <div class="centered-content">
-              <div class="ita">
-                <h1 id="modalTitle">Sistemi Operativi</h1>
-              </div>
-              <div class="eng">
-                <h1 id="modalTitle">Operating Systems</h1>
-              </div>
-            </div>
-          </div>
-          <div class="bubble" id="openModal3">
-            <div class="centered-content">
-              <div class="ita">
-                <h1 id="modalTitle">Strumenti Informatici</h1>
-              </div>
-              <div class="eng">
-                <h1 id="modalTitle">IT Tools</h1>
-              </div>
-            </div>
+      <div class="about">
+        <div class="profile">
+          <img src="images/cvPic.jpg" alt="Immagine Profilo" class="profile-image" />
+          <div class="profile-details">
+            <p class="name">Michele</p>
+            <p class="surname">Montesi</p>
           </div>
         </div>
-
-        <div class="modal-container" id="modalSkills">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modalTitle"></h2>
-            <div class="modal-body">
-              <ul class="modal-list"></ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="page" id="education">
-        <div class="ita">
-          <h1 class="title">Formazione</h1>
-        </div>
-        <div class="eng">
-          <h1 class="title">Education</h1>
-        </div>
-
-        <div class="education">
-          <img src="images/unibo.png" alt="Unibo Icon" class="uni-image" />
-          <div class="edu-description">
-            <div class="ita">
-              <p class="edu-studies">
-                Studente presso<br />
-                Ingegneria E Scienze Informatiche<br />
-                Università Di Bologna
-              </p>
-            </div>
-            <div class="eng">
-              <p class="edu-studies">
-                Student at<br />
-                Computer Science And Engineering<br />
-                University Of Bologna
-              </p>
-            </div>
-            <div class="ita">
-              <p class="study-progress">2020 - In corso</p>
-            </div>
-            <div class="eng">
-              <p class="study-progress">2020 - In progress</p>
-            </div>
-          </div>
-          <div class="progress-wrapper">
-            <div class="circle-progress">
-              <div class="inner">
-                <h3 class="ita">CFU</h3>
-                <h3 class="eng">ECTF</h3>
-                156 / 180
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="page" id="experience">
-        <div class="ita">
-          <h1 class="title">Esperienza lavorativa</h1>
-        </div>
-        <div class="eng">
-          <h1 class="title">Work experience</h1>
-        </div>
-
-        <div id="card-container">
-          <div id="galleryView">
-            <div id="galleryContainer">
-              <div id="leftView"></div>
-              <button id="navLeft" class="navBtns">
-                <i class="fas fa-arrow-left fa-3x"></i>
-              </button>
-              <div id="mainView"></div>
-              <div id="rightView"></div>
-              <button id="navRight" class="navBtns">
-                <i class="fas fa-arrow-right fa-3x"></i>
-              </button>
-            </div>
-            <div id="page-indicators"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="page" id="projects">
-        <div class="ita">
-          <h1 class="title">Progetti</h1>
-        </div>
-        <div class="eng">
-          <h1 class="title">Projects</h1>
-        </div>
-
-        <div class="projects-container">
-          <ul class="projects-menu">
-            <div class="projects-toggle">
-              <img src="icons/GitHub-logo.png" alt="Click Me" />
-            </div>
-            <li style="--i: 0">
-              <div class="proj-bubble" id="proj-teleport">
-                <img src="icons/teleport.png" alt="" />
-              </div>
-            </li>
-            <li style="--i: 1">
-              <div class="proj-bubble" id="proj-swarm">
-                <img src="icons/swarm.png" alt="" />
-              </div>
-            </li>
-            <li style="--i: 2">
-              <div class="proj-bubble" id="proj-hpc">
-                <img src="icons/hpc.png" alt="" />
-              </div>
-            </li>
-            <li style="--i: 3">
-              <div class="proj-bubble" id="proj-db">
-                <img src="icons/javadb.jpeg" alt="" />
-              </div>
-            </li>
-            <li style="--i: 4">
-              <div class="proj-bubble" id="proj-udp">
-                <img src="icons/udp.jpeg" alt="" />
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="modal-container" id="proj-modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="proj-title"></h2>
-            <img id="proj-image" src="" alt="">
-            <div class="proj-desc-container">
-              <p id="proj-description"></p>
-            </div>
-            <a id="proj-link" href="#" target="_blank">Visita la repo</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="page" id="contact">
-        <div class="ita">
-          <h1 class="title">Contatti</h1>
-        </div>
-        <div class="eng">
-          <h1 class="title">Contact</h1>
-        </div>
-        <div class="social-links">
-          <a
-            href="https://www.linkedin.com/in/michele-montesi-0b4312291"
-            class="social-link linkedin"
-            target="_blank"
-          >
-            <img src="images/linkedin-icon.png" alt="LinkedIn" />
-          </a>
+        <div class="description">
           <div class="ita">
-            <a
-              href="files/CV - Michele Montesi.pdf"
-              download="CV - Michele Montesi.pdf"
-              class="social-link linkedin"
-              target="_blank"
-            >
-              <img src="images/cv.png" alt="Curriculum" />
-            </a>
+            <p class="studies">
+              Studente presso<br />
+              Ingegneria E Scienze Informatiche
+            </p>
           </div>
           <div class="eng">
-            <a
-              href="files/CV - Michele Montesi (English).pdf"
-              download="CV - Michele Montesi (English).pdf"
-              class="social-link linkedin"
-              target="_blank"
-            >
-              <img src="images/cv.png" alt="Curriculum" />
-            </a>
+            <p class="studies">
+              Student at<br />
+              Computer Science And Engineering
+            </p>
           </div>
-          <a
-            href="mailto:michelemontesi36@gmail.com"
-            class="social-link linkedin"
-            target="_blank"
-          >
-            <img src="images/mail.png" alt="Mail" />
+          <div class="ita">
+            <p class="biography">
+              Sono impegnato in una continua ricerca di conoscenza,<br />
+              cercando di unire la mia passione per la tecnologia <br />
+              con una forte dedizione al lavoro di squadra e
+              all'eccellenza.<br />
+              Come aspirante ingegnere informatico, mi sento a mio agio di
+              fronte alle sfide, <br />
+              risolvendo problemi complessi e rimanendo all'avanguardia
+              dell'innovazione.
+            </p>
+          </div>
+          <div class="eng">
+            <p class="biography">
+              I'm on a relentless pursuit of knowledge,<br />
+              striving to merge my passion for technology<br />
+              with a strong dedication to teamwork and excellence.<br />
+              As an aspiring computer engineer, I thrive on challenges,<br />
+              solving complex problems, and staying at the forefront of
+              innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="skills">
+      <div class="ita">
+        <h1 class="title">Competenze</h1>
+      </div>
+      <div class="eng">
+        <h1 class="title">Skills</h1>
+      </div>
+      <div class="bubbles-container">
+        <div class="bubble" id="openModal1">
+          <div class="centered-content">
+            <div class="ita">
+              <h1 id="modalTitle">Linguaggi di Programmazione</h1>
+            </div>
+            <div class="eng">
+              <h1 id="modalTitle">Programming Language</h1>
+            </div>
+          </div>
+        </div>
+        <div class="bubble" id="openModal2">
+          <div class="centered-content">
+            <div class="ita">
+              <h1 id="modalTitle">Sistemi Operativi</h1>
+            </div>
+            <div class="eng">
+              <h1 id="modalTitle">Operating Systems</h1>
+            </div>
+          </div>
+        </div>
+        <div class="bubble" id="openModal3">
+          <div class="centered-content">
+            <div class="ita">
+              <h1 id="modalTitle">Strumenti Informatici</h1>
+            </div>
+            <div class="eng">
+              <h1 id="modalTitle">IT Tools</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-container" id="modalSkills">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="modalTitle"></h2>
+          <div class="modal-body">
+            <ul class="modal-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="education">
+      <div class="ita">
+        <h1 class="title">Formazione</h1>
+      </div>
+      <div class="eng">
+        <h1 class="title">Education</h1>
+      </div>
+
+      <div class="education">
+        <img src="images/unibo.png" alt="Unibo Icon" class="uni-image" />
+        <div class="edu-description">
+          <div class="ita">
+            <p class="edu-studies">
+              Studente presso<br />
+              Ingegneria E Scienze Informatiche<br />
+              Università Di Bologna
+            </p>
+          </div>
+          <div class="eng">
+            <p class="edu-studies">
+              Student at<br />
+              Computer Science And Engineering<br />
+              University Of Bologna
+            </p>
+          </div>
+          <div class="ita">
+            <p class="study-progress">2020 - In corso</p>
+          </div>
+          <div class="eng">
+            <p class="study-progress">2020 - In progress</p>
+          </div>
+        </div>
+        <div class="progress-wrapper">
+          <div class="circle-progress">
+            <div class="inner">
+              <h3 class="ita">CFU</h3>
+              <h3 class="eng">ECTF</h3>
+              174 / 180
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="experience">
+      <div class="ita">
+        <h1 class="title">Esperienza lavorativa</h1>
+      </div>
+      <div class="eng">
+        <h1 class="title">Work experience</h1>
+      </div>
+
+      <div id="card-container">
+        <div id="galleryView">
+          <div id="galleryContainer">
+            <div id="leftView"></div>
+            <button id="navLeft" class="navBtns">
+              <i class="fas fa-arrow-left fa-3x"></i>
+            </button>
+            <div id="mainView"></div>
+            <div id="rightView"></div>
+            <button id="navRight" class="navBtns">
+              <i class="fas fa-arrow-right fa-3x"></i>
+            </button>
+          </div>
+          <div id="page-indicators"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="projects">
+      <div class="ita">
+        <h1 class="title">Progetti</h1>
+      </div>
+      <div class="eng">
+        <h1 class="title">Projects</h1>
+      </div>
+
+      <div class="projects-container">
+        <ul class="projects-menu">
+          <div class="projects-toggle">
+            <img src="icons/GitHub-logo.png" alt="Click Me" />
+          </div>
+          <li style="--i: 0">
+            <div class="proj-bubble" id="proj-teleport">
+              <img src="icons/teleport.png" alt="" />
+            </div>
+          </li>
+          <li style="--i: 1">
+            <div class="proj-bubble" id="proj-swarm">
+              <img src="icons/swarm.png" alt="" />
+            </div>
+          </li>
+          <li style="--i: 2">
+            <div class="proj-bubble" id="proj-hpc">
+              <img src="icons/hpc.png" alt="" />
+            </div>
+          </li>
+          <li style="--i: 3">
+            <div class="proj-bubble" id="proj-db">
+              <img src="icons/javadb.jpeg" alt="" />
+            </div>
+          </li>
+          <li style="--i: 4">
+            <div class="proj-bubble" id="proj-udp">
+              <img src="icons/udp.jpeg" alt="" />
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="modal-container" id="proj-modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 id="proj-title"></h2>
+          <img id="proj-image" src="" alt="">
+          <div class="proj-desc-container">
+            <p id="proj-description"></p>
+          </div>
+          <a id="proj-link" href="#" target="_blank">Visita la repo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page" id="contact">
+      <div class="ita">
+        <h1 class="title">Contatti</h1>
+      </div>
+      <div class="eng">
+        <h1 class="title">Contact</h1>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/michele-montesi-0b4312291" class="social-link linkedin" target="_blank">
+          <img src="images/linkedin-icon.png" alt="LinkedIn" />
+        </a>
+        <div class="ita">
+          <a href="files/CV - Michele Montesi.pdf" download="CV - Michele Montesi.pdf" class="social-link linkedin"
+            target="_blank">
+            <img src="images/cv.png" alt="Curriculum" />
           </a>
         </div>
-      </section>
+        <div class="eng">
+          <a href="files/CV - Michele Montesi (English).pdf" download="CV - Michele Montesi (English).pdf"
+            class="social-link linkedin" target="_blank">
+            <img src="images/cv.png" alt="Curriculum" />
+          </a>
+        </div>
+        <a href="mailto:michelemontesi36@gmail.com" class="social-link linkedin" target="_blank">
+          <img src="images/mail.png" alt="Mail" />
+        </a>
+      </div>
+    </section>
 
-    </div>
-    <script src="scripts/languageScript.js"></script>
-    <script src="scripts/menuScript.js"></script>
-    <script src="scripts/timelineScript.js"></script>
-    <script src="scripts/bubblesScript.js"></script>
-    <script src="scripts/experienceScript.js"></script>
-    <script src="scripts/projectsScript.js"></script>
+  </div>
+  <script src="scripts/languageScript.js"></script>
+  <script src="scripts/menuScript.js"></script>
+  <script src="scripts/timelineScript.js"></script>
+  <script src="scripts/bubblesScript.js"></script>
+  <script src="scripts/experienceScript.js"></script>
+  <script src="scripts/projectsScript.js"></script>
 
-    <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
-  </body>
+  <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
+</body>
+
 </html>
