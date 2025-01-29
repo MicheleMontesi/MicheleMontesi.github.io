@@ -40,7 +40,7 @@
   background: #ffcdb2;
   overflow: hidden;
   background-image: conic-gradient(
-    var(--primary-color) 83%,
+    var(--primary-color) 97%,
     var(--secondary-color) 0
   );
 }
