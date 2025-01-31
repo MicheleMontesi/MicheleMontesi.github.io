@@ -8,11 +8,12 @@ const itaExperiences = [
     endDate: 'In corso',
     jobLocation: 'Cooperativa Sole - Gatteo',
     descriptionList: [
-        'Sviluppo gestionale per la cooperativa',
-        'Sviluppo in C#',
-        'Sviluppo in Angular',
-        'Sviluppo front-end e back-end',
-        'Sviluppo di REST API'
+      'Sviluppo gestionale per la cooperativa',
+      'Sviluppo in C#',
+      'Sviluppo in Angular',
+      'Sviluppo front-end e back-end',
+      'Sviluppo di REST API',
+      'Integrazione di sistemi di Single Sign-on (Keycloak, Oauth2, OpenId Connect)'
     ],
   },
   {
@@ -96,6 +97,7 @@ const engExperiences = [
       'Development in Angular',
       'Front-end and back-end development',
       'Development of REST APIs',
+      'Integration of Single Sign-on systems (Keycloak, Oauth2, OpenId Connect)',
     ],
   },
   {
@@ -211,16 +213,13 @@ function loadGallery() {
     <h2>${currentExp.title}</h2>
     <div class="job-date-location-container">
       <div class="job-date-container">
-        <p class="job-date">${translate("Data d'inizio:")}<br/>${
-          currentExp.startDate
-        }</p>
-        <p class="job-date">${translate('Data di fine:')}<br/>${
-          currentExp.endDate
-        }</p>
+        <p class="job-date">${translate("Data d'inizio:")}<br/>${currentExp.startDate
+    }</p>
+        <p class="job-date">${translate('Data di fine:')}<br/>${currentExp.endDate
+    }</p>
       </div>
-      <p class="job-location">${translate('Luogo di lavoro:')}<br/>${
-        currentExp.jobLocation
-      }</p>
+      <p class="job-location">${translate('Luogo di lavoro:')}<br/>${currentExp.jobLocation
+    }</p>
     </div>
     <div class="job-description-box">
       <ul class="job-description">${descriptionList}</ul>
