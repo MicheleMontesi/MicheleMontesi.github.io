@@ -149,11 +149,21 @@ html {
   border-radius: 10px;
 }
 
+.about-section .text-secondary {
+  overflow-wrap: anywhere; /* prevent long contact values from spilling out */
+}
+
 footer a:not(.nav-link) {
   color: inherit;
   border-bottom: 1px dashed;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (min-width: 48em) {
+  .about-section .text-secondary {
+    white-space: nowrap; /* keep longer details like email on one line */
+  }
 }
 
 @media (min-width: 48em) {
