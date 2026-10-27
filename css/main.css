@@ -390,13 +390,22 @@ ol {
   grid-column: span 4;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
+  border-left: 3px solid var(--accent);
+  padding-left: 14px;
+}
+
+.hero-fact-cat {
+  font-size: var(--step-small);
+  font-weight: 700;
+  color: var(--accent);
 }
 
 .hero-fact-title {
   font-size: var(--step-body);
   font-weight: 700;
   color: var(--ink);
+  line-height: 1.25;
 }
 
 .hero-fact-desc {
