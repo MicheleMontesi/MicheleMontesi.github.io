@@ -1,26 +1,71 @@
+/* ==========================================================================
+   Michele Montesi · Print Stylesheet (A4 Clean Output)
+   ========================================================================== */
+
 @media print {
+  @page {
+    size: A4;
+    margin: 12mm 14mm;
+  }
+
+  html,
   body {
-    background-color: #fff; }
-  .container {
-    width: auto;
-    max-width: 100%;
-    padding: 0; }
-  .cover, .cover-bg {
-    border-radius: 0; }
-  .cover.shadow-lg {
-    box-shadow: none !important; }
-  .cover-bg {
-    padding: 5rem !important;
-    padding-bottom: 10px !important; }
-  .avatar {
-    margin-top: -10px; }
-  .about-section {
-    padding: 6.5rem 5rem 2rem !important; }
-  .skills-section,
-  .work-experience-section,
-  .education-section,
-  .contant-section {
-    padding: 1.5rem 5rem 2rem !important; }
-  .page-break {
-    padding-top: 5rem;
-    page-break-before: always; } }
+    background: #ffffff !important;
+    color: #0b0c0e !important;
+    font-size: 10pt !important;
+    line-height: 1.35 !important;
+  }
+
+  .hero-nav,
+  .hero-actions,
+  .work-preview-col,
+  .work-mobile-plate,
+  .showcase-media-col,
+  .showcase-tabs,
+  .showcase-actions,
+  .about-portrait-card,
+  .about-pillar-img,
+  .stack-filter-row,
+  .stack-matrix-ui,
+  .footer-actions,
+  .footer-monument-crop {
+    display: none !important;
+  }
+
+  .hero,
+  .section-work,
+  .section-showcase,
+  .section-about,
+  .section-list,
+  .section-contact,
+  .site-footer {
+    min-height: auto !important;
+    padding-block: 14pt !important;
+    background: #ffffff !important;
+    color: #0b0c0e !important;
+  }
+
+  .monument-title {
+    font-size: 28pt !important;
+    margin-bottom: 8pt !important;
+  }
+
+  .section-heading,
+  .showcase-heading,
+  .giant-word,
+  .footer-heading {
+    font-size: 15pt !important;
+    color: #0b0c0e !important;
+    margin-bottom: 6pt !important;
+  }
+
+  .work-row,
+  .about-pillar,
+  .bar-details,
+  .contact-row {
+    background: #ffffff !important;
+    color: #0b0c0e !important;
+    padding: 6pt 0 !important;
+    break-inside: avoid;
+  }
+}
