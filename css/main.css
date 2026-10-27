@@ -1582,8 +1582,18 @@ a.contact-row:hover .contact-row-sub {
     position: static;
   }
 
+  .hero-bottom-bar {
+    background-color: transparent;
+    padding: 0;
+    gap: 10px;
+  }
+
   .hero-fact-block {
-    grid-column: span 4;
+    grid-column: 1 / 13;
+    background-color: var(--surface);
+    padding: 16px 18px;
+    border-left: 3px solid var(--accent);
+    gap: 4px;
   }
 
   .hero-statement,
@@ -1709,12 +1719,11 @@ a.contact-row:hover .contact-row-sub {
   }
 
   .hero-bottom-bar {
-    padding: 16px;
-    gap: 16px;
+    gap: 10px;
   }
 
   .hero-fact-block {
-    grid-column: 1 / 13;
+    padding: 14px 16px;
     gap: 4px;
   }
 
@@ -1784,7 +1793,7 @@ a.contact-row:hover .contact-row-sub {
   }
 
   .about-plates-col {
-    gap: 20px;
+    gap: 14px;
   }
 
   .about-pillar-shutter,
@@ -1794,8 +1803,10 @@ a.contact-row:hover .contact-row-sub {
 
   .about-pillar {
     grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 14px 0;
+    gap: 8px;
+    padding: 16px 18px;
+    background-color: var(--surface);
+    border-left: 3px solid var(--accent);
   }
 
   /* 4. Technical Stack on Phone */
